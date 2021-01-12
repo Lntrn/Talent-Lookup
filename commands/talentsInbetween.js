@@ -18,7 +18,7 @@ module.exports = {
 			id: "3080",
 	    execute(client, message, args) {
 
-			let whitelist = ["750304052184612865", "341245605194104833"]
+			let whitelist = ["750304052184612865", "341245605194104833", "316382242123415572", "726978704391143485", "318438353693573152", ]
 
 			if (whitelist.includes(message.author.id)) {
 				databaseRef.searchFor(client, message, args);

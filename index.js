@@ -107,15 +107,15 @@ client.on("message", async (message) => {
     return;
   }
 
-  // if bot owner, react
-  // if (message.author.id === Config.ownerID)
-  // message.react(client.emojis.cache.get(Emojis.damage.id));
-
   // console.log(args);
 
   args = args.filter(ele => ele !== "" && ele !== " ");
   // retrieve command
-  const commandName = args.shift().toLowerCase();
+  if (args.length !== 0) {
+    commandName = args.shift().toLowerCase();
+  } else {
+    return message.channel.send(`Say "<@${client.user.id}> help" for help`);
+  }
   const command = client.commands.get(commandName) ||
     client.commands.find(command => command.aliases && command.aliases.includes(commandName) || client.commands.find(command => command.id && command.id.includes(commandName)));
 
