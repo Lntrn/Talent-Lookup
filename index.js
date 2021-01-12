@@ -1,17 +1,14 @@
-const Secret = require("./secret.json");
-const Discord = require("discord.js");
-const Functions = require("./utilities/functions.js")
-const fs = require("fs");
-const Enmap = require("enmap");
-const Channels = require("./utilities/channels.js");
-const Emojis = require("./utilities/emojis.js");
-const date = new Date();
+const Secret = require("./secret.json"),
+  Discord = require("discord.js"),
+  Functions = require("./utilities/functions.js"),
+  fs = require("fs"),
+  Enmap = require("enmap"),
+  Channels = require("./utilities/channels.js"),
+  Emojis = require("./utilities/emojis.js"),
+  date = new Date(),
+  Config = require("./utilities/config.json");
 
-const Config = JSON.parse(fs.readFileSync("./utilities/config.json", "utf8"));
-
-let hours = date.getHours();
-let minutes = date.getMinutes();
-let seconds = date.getSeconds();
+let hours = date.getHours(), minutes = date.getMinutes(), seconds = date.getSeconds();
 
 if (seconds.length === 1) {
   seconds = `${seconds}0`
@@ -81,19 +78,17 @@ client.on("ready", async () => {
 
 client.on("message", async (message) => {
 
-  const owner = await client.users.fetch(Config.ownerID);
-  
-  const prefix = `t!`;
-  const mention = `<@${client.user.id}>`;
-  const nicknameMention = `<@!${client.user.id}>`;
-
-  const prefixCheck = message.content.substr(0, prefix.length);
-  const mentionCheck = message.content.substr(0, mention.length);
-  const nicknameMentionCheck = message.content.substr(0, nicknameMention.length);
+  const owner = await client.users.fetch(Config.ownerID),
+    prefix = `t!`,
+    mention = `<@${client.user.id}>`,
+    nicknameMention = `<@!${client.user.id}>`,
+    prefixCheck = message.content.substr(0, prefix.length),
+    mentionCheck = message.content.substr(0, mention.length),
+    nicknameMentionCheck = message.content.substr(0, nicknameMention.length);
 
   // if a client sent the message, ignore
   if (message.author.bot)
-    return;
+   return;
 
   let args;
   // Check for prefixes
@@ -107,8 +102,6 @@ client.on("message", async (message) => {
     return;
   }
 
-  // console.log(args);
-
   args = args.filter(ele => ele !== "" && ele !== " ");
   // retrieve command
   if (args.length !== 0) {
@@ -119,15 +112,7 @@ client.on("message", async (message) => {
   const command = client.commands.get(commandName) ||
     client.commands.find(command => command.aliases && command.aliases.includes(commandName) || client.commands.find(command => command.id && command.id.includes(commandName)));
 
-  if (!command) {
-    return;
-    //toFind = "unrecognized"
-    //const unrecognized = client.commands.get(toFind)
-    //	|| client.commands.find(command => command.aliases && command.aliases.includes(toFind) || client.commands.find(command => command.id && command.id.includes(toFind)));
-    //unrecognized.execute(client, message).catch((err) => {
-    //    client.users.fetch(Config.ownerID)
-    //});
-  }
+  if (!command) return;
 
   if (command) {
     try {
