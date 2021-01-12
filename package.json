@@ -1,0 +1,30 @@
+{
+    "name": "Talent Lookup Bot",
+    "description": "Bot",
+    "author": "Lntrn#0721",
+    "dependencies": {
+        "asynckit": "^0.4.0",
+        "cheerio": "^1.0.0-rc.3",
+        "combined-stream": "^1.0.8",
+        "delayed-stream": "^1.0.0",
+        "discord-jokes": "^3.0.0",
+        "discord.js": "^12.5.1",
+        "dotenv": "^8.2.0",
+        "dotenv-flow": "^3.2.0",
+        "enmap": "^5.8.2",
+        "event-target-shim": "^5.0.1",
+        "firebase": "^8.1.2",
+        "firebase-admin": "^9.4.2",
+        "googleapis": "^66.0.0",
+        "mime-db": "^1.45.0",
+        "mime-types": "^2.1.27",
+        "mongodb": "^3.6.3",
+        "random-org": "^2.1.0",
+        "request": "^2.88.2"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "main": "index.js",
+    "version": "0.1.0"
+}
