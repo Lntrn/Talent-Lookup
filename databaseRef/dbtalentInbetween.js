@@ -190,6 +190,8 @@ module.exports = {
         let totalCount;
         let sentCount;
 
+        let cappedRankAgain;
+
         let talent = [];
         let p = 0;
 
@@ -222,7 +224,6 @@ module.exports = {
                 let minWeight;
                 let maxWeight;
                 let rank;
-
           
                 if (queryTalent.size === 0) { 
                     return message.channel.send(`check spelling or talent is not yet in db \`${trimmedName}\``);

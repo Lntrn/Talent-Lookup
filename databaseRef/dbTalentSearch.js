@@ -58,7 +58,19 @@ async checkTalents(args, db, message) {
 
     for (let talentName of talentsArray) {
       let trimmedName = talentName.trim();
-      let talentDoc = db.collection("talents").doc(`${trimmedName}`);
+      console.log(trimmedName)
+
+      if (trimmedName.includes("-")) {
+        trimmedName = trimmedName.replace("-", " ");
+      }
+
+      let talentDoc;
+      if (trimmedName.length !== 0) {
+        talentDoc = db.collection("talents").doc(`${trimmedName}`);
+      } else {
+        return message.channel.send("fatal error");
+      }
+
       let queryTalent = await talentDoc.get();
 
       let name;
