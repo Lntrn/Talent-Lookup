@@ -1,11 +1,10 @@
-const fs = require("fs");
-
-const Channels = require("../utilities/channels.js");
-const Config = JSON.parse(fs.readFileSync('./utilities/config.json', 'utf8'));
-const CommandLog = require("../utilities/commandLog.js");
-const Format = require("../utilities/format.js");
-const Discord = require("discord.js");
-const Emojis = require("../utilities/emojis.js");
+const fs = require("fs"),
+    Channels = require("../utilities/channels.js"),
+    Config = require("../utilities/config.json"),
+    CommandLog = require("../utilities/commandLog.js"),
+    Format = require("../utilities/format.js"),
+    Discord = require("discord.js"),
+    Emojis = require("../utilities/emojis.js");
 
 module.exports = {
 			name: "helpCommand",
