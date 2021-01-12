@@ -82,8 +82,12 @@ client.on("ready", async () => {
 client.on("message", async (message) => {
 
   const owner = await client.users.fetch(Config.ownerID);
+  
+  const prefix = `t!`;
   const mention = `<@${client.user.id}>`;
   const nicknameMention = `<@!${client.user.id}>`;
+
+  const prefixCheck = message.content.substr(0, prefix.length);
   const mentionCheck = message.content.substr(0, mention.length);
   const nicknameMentionCheck = message.content.substr(0, nicknameMention.length);
 
@@ -93,7 +97,9 @@ client.on("message", async (message) => {
 
   let args;
   // Check for prefixes
-  if (mentionCheck === mention) {
+  if (prefixCheck === prefix){
+    args = message.content.slice(prefix.length).split(/[\s|\r?\n|\r]/);
+  } else if (mentionCheck === mention) {
     args = message.content.slice(mention.length).trim().split(/[\s|\r?\n|\r]/);
   } else if (nicknameMentionCheck === nicknameMention) {
     args = message.content.slice(nicknameMention.length).split(/[\s|\r?\n|\r]/);

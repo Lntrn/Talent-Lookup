@@ -199,7 +199,7 @@ module.exports = {
         let talentsEmbed = new Discord.MessageEmbed()
             .setTitle(authorTag)
             .setThumbnail(authorAv)
-            .setColor("#2399fa")
+            .setColor("#310ff5")
 
         if (talentRank !== undefined) {
 

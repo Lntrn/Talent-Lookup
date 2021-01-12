@@ -54,7 +54,7 @@ async checkTalents(args, db, message) {
     let searchEmbed = new Discord.MessageEmbed()
             .setTitle(authorTag)
             .setThumbnail(authorAv)
-            .setColor("#2399fa")
+            .setColor("#310ff5")
 
     for (let talentName of talentsArray) {
       let trimmedName = talentName.trim();

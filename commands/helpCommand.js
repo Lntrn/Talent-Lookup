@@ -2,6 +2,7 @@ const fs = require("fs");
 
 const Channels = require("../utilities/channels.js");
 const Config = JSON.parse(fs.readFileSync('./utilities/config.json', 'utf8'));
+const CommandLog = require("../utilities/commandLog.js");
 const Format = require("../utilities/format.js");
 const Discord = require("discord.js");
 const Emojis = require("../utilities/emojis.js");
@@ -9,18 +10,21 @@ const Emojis = require("../utilities/emojis.js");
 module.exports = {
 			name: "helpCommand",
 			aliases: ["help", "ivefallenandcantgetup"],
-			description: "guess what it does",  //lol
+			description: "",
 			id: "5026",
 	    execute(client, message, args) {
 
 			const helpEmbed = new Discord.MessageEmbed()
-			.setColor("#ff7518")
-			.setTitle(`🎃  ** Welcome to Pumpkin**   🎃`)
-			.setDescription(``)
-			.addField(`\`talentSearch\``, `> Checks for multiple talents, seperated by commas, in the database.\n> Aliases: \`ts\`, \`talents\`\n> ex. <@${client.user.id}> ts <talent one>, <talent two>, etc...`)
+			.setColor("#310ff5")
+			.addField(`‎`, `*Prefix: **t!**\nUniversal Prefix: **<@${client.user.id}>***`)
+			.addField(`\`sourceCode\``, `> Directly messages a link to the bot's Github page to the command author.\n> **Aliases**: \`source\`\n> ex. \<@${client.user.id}> sourceCode`)
+			.addField(`\`talentSearch\``, `> Checks for multiple talents, seperated by commas, in the database.\n> **Aliases**: \`ts\`, \`talents\`\n> ex. <@${client.user.id}> ts <talent one>, <talent two>, etc...`)
+			.addField(`\`talentsInbetween\` *whitelisted command*`, `> Checks for all talents inbetween two known talents. Can also filter by specific talent rank.\n> **Aliases**: \`tib\`\n> ex. <@${client.user.id}> tib spell proof, spell defying, rare`)
 			//.addField(`\`reagentSearch\``, `> Buggy. Posts wiki link for reagent and looks for reagent locations and posts them to discord.\n> Aliases: \`regsearch\`, \`regs\`\n> <@782434037179613195> ts <talent one>, <talent two>, etc...`)
 
 		message.channel.send(helpEmbed);
+
+		CommandLog.logCommand(client, message, message.guild.id, "help");
       	}
 };
 

@@ -14,7 +14,7 @@ module.exports = {
         date = new Date();
 
         const log = new Discord.MessageEmbed()
-            .setColor("#DD2E44")
+            .setColor("#ff7518")
             .setTitle(":tada: **━━━━━ NEW SERVER ━━━━━** :tada:")
             .setDescription(`\n**Server:** ${guild}`
                             + `\n**Date:** ${date.toDateString()}`)

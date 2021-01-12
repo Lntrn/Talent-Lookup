@@ -15,7 +15,7 @@ module.exports = {
             date = new Date();
 
             const log = new Discord.MessageEmbed()
-                .setColor("#FFD983")
+                .setColor("#ff7518")
                 .setTitle(":label: **━━━━━ SERVER NAME CHANGE ━━━━━** :label:")
                 .setDescription(`\n**Old Name:** ${oldGuild.name}`
                                 + `\n**New Name:** ${newGuild.name}`
