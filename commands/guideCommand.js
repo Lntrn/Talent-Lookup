@@ -112,7 +112,7 @@ function mainPage(client, message) {
 	const mainPageEmbed = new Discord.MessageEmbed()
 		.setColor("#310ff5")
 		.setTitle(`${Emojis.intellect.pub} Welcome to the Talent Lookup bot ${Emojis.intellect.pub}`)
-		.setDescription(`This guide is almost completely copied from [**Project O's Beginner's Pet Guide**](http://www.wizard101central.com/forums/showthread.php?486420-Beginner-s-Guide-to-Project-O). You need a basic understanding of this to use this bot.`)
+		.setDescription(`This guide is almost completely copied from [**Project O's Beginner's Pet Guide**](http://www.wizard101central.com/forums/showthread.php?486420-Beginner-s-Guide-to-Project-O). You need a basic understanding of this to use this bot.\n\nI'd also like to give a huge thanks to [Milt](http://www.wizard101central.com/forums/member.php?36-Milt) for being the one to originally type this guide up and maintaining Project O for so long.`)
 		.setFooter(`Currently on page 1 of 5.`)
 	
 	return mainPageEmbed;
