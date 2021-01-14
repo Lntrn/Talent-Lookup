@@ -18,5 +18,9 @@ module.exports = {
     pumpkin: {
       id: "🎃",
       pub: "🎃"
+    },
+    intellect: {
+      id: "799225493626683472",
+      pub: "<:Icon_Intellect:799225493626683472>"
     }
 }

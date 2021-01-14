@@ -121,8 +121,9 @@ client.on("message", async (message) => {
   } else {
     return message.channel.send(`Say "<@${client.user.id}> help" for help`);
   }
-  const command = client.commands.get(commandName) ||
-    client.commands.find(command => command.aliases && command.aliases.includes(commandName) || client.commands.find(command => command.id && command.id.includes(commandName)));
+  const command = client.commands.get(commandName) || 
+    client.commands.find(command => command.aliases && command.aliases.includes(commandName) || 
+      client.commands.find(command => command.id && command.id.includes(commandName)));
 
   if (!command) {
     return;
