@@ -121,6 +121,7 @@ function mainPage(client, message) {
 function pageTwo(client, message) {
 	let pageTwoEmbed = new Discord.MessageEmbed()
 		.setColor("#310ff5")
+		.setTitle("__Table of Contents__")
 		.setDescription(`I. . . . . Introduction\nII. . . . . . Our Mission\nIII. . . . . . . What is a Genome?\nIV. . . . . . . . . What is Talent Priority?\nV. . . . . . . . . . . What are Relationships?`)
 		.addField(`__I. Introduction__`, `In this guide, you’ll learn the ropes about our project, threads, and contribution processes. You'll also be introduced to the concept of talent priority: an in-game mechanic that determines where any talent may be placed in a pet's genome. Links to other threads will be provided throughout this they become relevant; you won't be required to read through them, but they're worth checking out if you have the time.\n\nWithout further ado, let’s get started!`)
 		.addField(`__II. Project O's Mission__`, "Project O was originally founded on June 27th, 2011, by PunkyMax. From the beginning, they positioned themselves as the central hub for researching talent-order mechanics and genome-reading techniques. Their work also paved the way towards the genome calculator: a technological marvel that deciphers pet genomes. This calculator was once considered a pipe dream up until the late 2010s and finally became a viable alternative to old-school genome-reading techniques by late 2020. They have worked alongside the Wizard101 Central Wiki to provide the highest quality knowledge base for the pet-hatching community.")
