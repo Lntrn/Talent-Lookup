@@ -45,7 +45,7 @@ modules.forEach(module => {
       if (!file.endsWith(".js")) return;
       let props = require(`./${module}/${file}`);
       let commandName = file.split(".")[0];
-      console.log(`Attempting to load command ${commandName}`)
+      console.log(`Attempting to load command ${commandName}`);
       client.commands.set(commandName, props);
     });
   });
@@ -60,6 +60,11 @@ for (const file of eventFiles) {
 
 client.on("ready", async () => {
 
+  if (Config.devmode) {
+    client.user.setPresence({
+      status: "invisible"
+    });
+  } else {
     client.user.setPresence({
       activity: {
         name: "Wizard101",
@@ -67,7 +72,7 @@ client.on("ready", async () => {
       },
       status: "dnd"
     });
-
+  }
 
   // send startup confirmation
   try {
@@ -97,7 +102,7 @@ client.on("message", async (message) => {
 
   let args;
   // Check for prefixes
-  if (prefixCheck === prefix){
+  if (prefixCheck === prefix) {
     args = message.content.slice(prefix.length).split(/[\s|\r?\n|\r]/);
   } else if (mentionCheck === mention) {
     args = message.content.slice(mention.length).trim().split(/[\s|\r?\n|\r]/);
@@ -156,4 +161,9 @@ client.on("guildUpdate", (oldGuild, newGuild) => {
   client.events.get("guildUpdate").execute(client, oldGuild, newGuild);
 })
 
-client.login(Secret.token);
+
+if (Config.devmode) {
+  client.login(Secret.devToken);
+} else {
+  client.login(Secret.token);
+}

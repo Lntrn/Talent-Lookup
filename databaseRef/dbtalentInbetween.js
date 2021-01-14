@@ -144,7 +144,7 @@ module.exports = {
         let talentArray1 = [];
         let talentArray2 = [];
 
-        //slightly different implementation - delete later
+        //slightly different implementation
 
         var oneMinInt = parseInt(oneMin);
         var twoMinInt = parseInt(twoMin);
@@ -187,6 +187,8 @@ module.exports = {
 
         let talentArray = talentArray1.filter(value => talentArray2.includes(value));
 
+        console.log(talentArray)
+
         let totalCount;
         let sentCount;
 
@@ -214,11 +216,12 @@ module.exports = {
 
             for (let talentName of talentArray) {
                 let trimmedName = talentName.trim();
-                //console.log(trimmedName);
+                //console.log(trimmedName + " - attempt");
                 totalCount++;
                 
                 let talentDoc = db.collection("talents").doc(`${trimmedName}`);
                 let queryTalent = await talentDoc.get();
+                //console.log(queryTalent)
           
                 let name;
                 let minWeight;
@@ -229,6 +232,7 @@ module.exports = {
                     return message.channel.send(`check spelling or talent is not yet in db \`${trimmedName}\``);
                 } else {
                     name = queryTalent.get("name");
+                    //console.log(name + " - success")
                     minWeight = queryTalent.get("minWeight");
                     maxWeight = queryTalent.get("maxWeight");
                     rank = queryTalent.get("rank");
@@ -259,7 +263,22 @@ module.exports = {
 
              let talentDesc = talent.join(" \n");
 
-             talentsEmbed.setDescription(talentDesc);
+             let [part1, ...part2] = Discord.splitMessage(talentDesc, { maxLength: 2048 });
+
+            // Max characters were not reached so there is no "rest" in the array
+            if (part2.length !== 0) { 
+                let part2Joined = part2.join(" \n");
+                //talentsEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part2Joined)
+                let [part2cont, ...part3] = Discord.splitMessage(part2Joined, { maxLength: 2048 });
+                talentsEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part2cont);
+
+                if (part3.length !== 0) {
+                    let part3Joined = part3.join(" \n");
+                    talentsEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part3Joined);
+                }
+            }
+
+             talentsEmbed.setDescription(part1);
              talentsEmbed.setFooter(`Sent ${sentCount} out of ${totalCount} talents matching rank ${cappedRankAgain}`);
              message.channel.send(talentsEmbed);
 

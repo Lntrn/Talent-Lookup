@@ -1,3 +1,5 @@
+//const talentList = require("../databaseRef/talentList.json");
+
 // require discord.js module
 const Discord = require("discord.js");
 const firebase = require("firebase-admin");
@@ -67,8 +69,9 @@ async checkTalents(args, db, message) {
       let talentDoc;
       if (trimmedName.length !== 0) {
         talentDoc = db.collection("talents").doc(`${trimmedName}`);
+        //talentDoc = db.collection("talents").doc("includes(trimmedName)");
       } else {
-        return message.channel.send("fatal error");
+        return message.channel.send("missing talents");
       }
 
       let queryTalent = await talentDoc.get();
