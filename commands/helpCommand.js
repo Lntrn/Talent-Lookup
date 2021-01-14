@@ -20,7 +20,6 @@ module.exports = {
 				.addField(`\`sourceCode\``, `> Directly messages a link to the bot's Github page to the command author.\n> **Aliases**: \`source\`\n> ex. \<@${client.user.id}> sourceCode`)
 				.addField(`\`talentSearch\``, `> Checks for multiple talents, seperated by commas, in the database.\n> **Aliases**: \`ts\`, \`talents\`\n> ex. <@${client.user.id}> ts <talent one>, <talent two>, etc...`)
 				.addField(`\`talentsInbetween\` *whitelisted command*`, `> Checks for all talents inbetween two known talents. Can also filter by specific talent rank.\n> **Aliases**: \`tib\`\n> ex. <@${client.user.id}> tib spell proof, spell defying, rare`)
-				.addField(``)
 				//.addField(`\`reagentSearch\``, `> Buggy. Posts wiki link for reagent and looks for reagent locations and posts them to discord.\n> Aliases: \`regsearch\`, \`regs\`\n> <@782434037179613195> ts <talent one>, <talent two>, etc...`)
 
 		message.channel.send(helpEmbed);
@@ -48,6 +47,6 @@ async function mainPage(client, message) {
 	const mainPageEmbed = new Discord.MessageEmbed()
 		.setColor("#310ff5")
 		.setTitle(`${Emojis.intellect.pub} Welcome to the Talent Lookup bot ${Emojis.intellect.pub}`)
-		.setDescription()
-		.addField()
+		.setDescription("text")
+		//.addField()
 }
