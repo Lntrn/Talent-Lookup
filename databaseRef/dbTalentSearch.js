@@ -32,7 +32,7 @@ module.exports = {
         console.log("DB already logged in.");
       }
 
-      message.channel.send("connecting to database, please wait");
+      message.channel.send("connecting to database, please wait"); 
       await new Promise((resolve) => {
         resolve(module.exports.checkTalents(args, db, message));
       });
@@ -49,6 +49,8 @@ async checkTalents(args, db, message) {
 
     let talent = [];
     let p = 0;
+
+    let pips;
 
     let authorTag = message.author.tag;
     let authorAv = message.author.avatarURL();
@@ -115,9 +117,23 @@ async checkTalents(args, db, message) {
             "minWeight": parseInt(minWeight),
             "desc": `[${cappedName}](${underscoreURL})(${minWeight} - ${maxWeight}) // ${Emojis.powerPip.pub} **${cappedRank}**`
           }*/
+
+          //console.log(cappedRank.toLowerCase())
+          if (cappedRank.toLowerCase() === "common") {
+            pips = `${Emojis.normalPip.pub} ${Emojis.normalPip.pub} ${Emojis.normalPip.pub} ${Emojis.normalPip.pub}`
+          } else if (cappedRank.toLowerCase() === "uncommon") {
+            pips = `${Emojis.powerPip.pub} ${Emojis.normalPip.pub} ${Emojis.normalPip.pub} ${Emojis.normalPip.pub}`
+          } else if (cappedRank.toLowerCase() === "rare") {
+            pips = `${Emojis.powerPip.pub} ${Emojis.powerPip.pub} ${Emojis.normalPip.pub} ${Emojis.normalPip.pub}`
+          } else if (cappedRank.toLowerCase() === "ultra rare") {
+            pips = `${Emojis.powerPip.pub} ${Emojis.powerPip.pub} ${Emojis.powerPip.pub} ${Emojis.normalPip.pub}`
+          } else if (cappedRank.toLowerCase() === "epic") {
+            pips = `${Emojis.powerPip.pub} ${Emojis.powerPip.pub} ${Emojis.powerPip.pub} ${Emojis.powerPip.pub}`
+          }
+          console.log(pips)
           let tal = {
             "minWeight": parseInt(minWeight),
-            "desc": `${cappedName}(${minWeight} - ${maxWeight}) // ${Emojis.powerPip.pub} **${cappedRank}**`
+            "desc": `${cappedName}(${minWeight} - ${maxWeight}) // ${pips} **${cappedRank}**`
           }
           talent[p] = tal;
           sentCount++;

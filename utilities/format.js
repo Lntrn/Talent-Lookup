@@ -1,5 +1,8 @@
 module.exports = {
-    supportLink: " \"Head to our Support Server for help!\"",
+    footer: {
+        desc: "If you have any suggestions or questions feel free to dm the bot.",
+        image: "https://i.imgur.com/a1FU6pS.png"
+    },
     emptyChar: " ‎",
     space(amt) {
         let whitespace = "";

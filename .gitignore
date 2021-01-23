@@ -1,3 +1,7 @@
 secret.json
 fireBase.json
 node_modules/
+sheetCredentials.json
+databaseRef/
+databaseRef/dbtalentInbetween.js
+databaseRef/dbAddTalent.js

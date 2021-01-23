@@ -153,8 +153,8 @@ module.exports = {
 
         if (oneMinInt <= twoMinInt) { // now twoMin always < oneMin
             let temp = oneMinInt;
-            oneMinInt = twoMin;
-            twoMinInt = temp;
+            oneMinInt = twoMinInt;
+            twoMinInt = temp; 
         } 
         if (oneMaxInt <= twoMaxInt) { // now twoMax always < oneMax //these don't work lmaoooo
             let temp = oneMaxInt;
@@ -259,7 +259,7 @@ module.exports = {
                     
                     
                 }
-             }
+            }
 
              let talentDesc = talent.join(" \n");
 
@@ -314,7 +314,20 @@ module.exports = {
                     if (name === undefined) {
                         message.channel.send(`check spelling or talent is n ot yet in db \`${trimmedName}\``);
                     }
-                    talent[p] = `${cappedName}(${minWeight} - ${maxWeight}) // ${Emojis.powerPip.pub} **${cappedRank}**`;
+
+                    if (cappedRank.toLowerCase() === "common") {
+                        pips = `${Emojis.normalPip.pub} ${Emojis.normalPip.pub} ${Emojis.normalPip.pub} ${Emojis.normalPip.pub}`
+                    } else if (cappedRank.toLowerCase() === "uncommon") {
+                        pips = `${Emojis.powerPip.pub} ${Emojis.normalPip.pub} ${Emojis.normalPip.pub} ${Emojis.normalPip.pub}`
+                    } else if (cappedRank.toLowerCase() === "rare") {
+                        pips = `${Emojis.powerPip.pub} ${Emojis.powerPip.pub} ${Emojis.normalPip.pub} ${Emojis.normalPip.pub}`
+                    } else if (cappedRank.toLowerCase() === "ultra rare") {
+                        pips = `${Emojis.powerPip.pub} ${Emojis.powerPip.pub} ${Emojis.powerPip.pub} ${Emojis.normalPip.pub}`
+                    } else if (cappedRank.toLowerCase() === "epic") {
+                        pips = `${Emojis.powerPip.pub} ${Emojis.powerPip.pub} ${Emojis.powerPip.pub} ${Emojis.powerPip.pub}`
+                    }
+
+                    talent[p] = `${cappedName}(${minWeight} - ${maxWeight}) // ${pips} **${cappedRank}**`;
                     sentCount++;
                     p++;
                     
@@ -339,7 +352,7 @@ module.exports = {
                     let part3Joined = part3.join(" \n");
                     talentsEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part3Joined);
                 }
-            } 
+            }
 
             /*// Get the other parts of the array with max char count
             for (const text of part2) {

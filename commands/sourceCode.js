@@ -10,11 +10,11 @@ const Emojis = require("../utilities/emojis.js");
 module.exports = {
 			name: "sourceCode",
 			aliases: ["source"],
-	    execute(client, message, args) {
+	    async execute(client, message, args) {
 
-		message.author.send("https://github.com/Lntrn/Talent-Lookup");
-		message.channel.send("Check your dms!");
+			message.author.send("https://github.com/Lntrn/Talent-Lookup");
+			message.channel.send("Check your dms!");
 
-		CommandLog.logCommand(client, message, message.guild.id, "source");
+			CommandLog.logCommand(client, message, message.guild.id, "sourceCode");
       	}
 };

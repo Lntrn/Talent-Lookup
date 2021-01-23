@@ -87,8 +87,13 @@ client.on("ready", async () => {
 client.on("message", async (message) => {
 
   const owner = await client.users.fetch(Config.ownerID);
-  
-  const prefix = `t!`;
+
+  let prefix;
+  if (!Config.devmode) {
+    prefix = `t!`;
+  } else {
+    prefix = "lumeo is awesome"
+  }
   const mention = `<@${client.user.id}>`;
   const nicknameMention = `<@!${client.user.id}>`;
 
@@ -99,6 +104,17 @@ client.on("message", async (message) => {
   // if a client sent the message, ignore
   if (message.author.bot)
     return;
+
+  if (message.channel.type === 'dm' ) {
+    let dmEmbed = new Discord.MessageEmbed()
+      .setTitle(message.author.tag)
+		  .setThumbnail(message.author.avatarURL())
+		  .setColor("#310ff5")
+      .setDescription(`User ID: \`${message.author.id}\`\nUser Mention: <@${message.author.id}>\nMessage content: \n>>> ${message.content}`)
+      
+    message.channel.send("Your message has been forwarded.")
+    return client.channels.cache.get(Channels.chat.id).send(dmEmbed);
+  }
 
   let args;
   // Check for prefixes
