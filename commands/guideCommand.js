@@ -26,8 +26,8 @@ module.exports = {
         const rightFilter = (reaction, user) => reaction.emoji.name === "⏩" && user.id === message.author.id;
 
 		// Create reaction collections, timeout after 60000 ms, 60 seconds
-		const leftCollector = sentEmbed.createReactionCollector(leftFilter, {time: 60000});
-        const rightCollector = sentEmbed.createReactionCollector(rightFilter, {time: 60000});
+		const leftCollector = sentEmbed.createReactionCollector(leftFilter, {time: 300000});
+        const rightCollector = sentEmbed.createReactionCollector(rightFilter, {time: 300000});
 
 		leftCollector.on("collect",
             function() {
