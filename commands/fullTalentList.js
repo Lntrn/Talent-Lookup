@@ -44,6 +44,8 @@ module.exports = {
 			
 			    // Log the command
 			    CommandLog.logCommand(client, message, message.guild.id, "full List");
+            } else {
+                return message.channel.send("You do not have permission to use this command.");
             }
 
 		}		

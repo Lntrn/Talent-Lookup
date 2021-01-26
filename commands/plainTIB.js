@@ -294,7 +294,13 @@ async function sendData(client, message, doc, sheet, desiredRank, foundTalents, 
     for (talent of foundTalents) {
 
 		let cappedName = talent.name.split(" ").map(capitalize).join(" ");
-		let cappedRank = talent.rank.split(" ").map(capitalize).join(" ");
+        let cappedRank = talent.rank.split(" ").map(capitalize).join(" ");
+        
+        if (cappedName.includes("{#}")) {
+            cappedName = cappedName.replace("{#}", "[Locked]")
+        } else if (cappedName.includes("{_}")) {
+            cappedName = cappedName.replace("{_}", "[Unlocked]")
+        }
 	
 		let rankFirstChars;
 	
@@ -316,7 +322,7 @@ async function sendData(client, message, doc, sheet, desiredRank, foundTalents, 
 	let cappedName1 = starterTalents[0].name.split(" ").map(capitalize).join(" ");
 	let cappedName2 = starterTalents[1].name.split(" ").map(capitalize).join(" ");
 	let cappedRank1 = starterTalents[0].rank.split(" ").map(capitalize).join(" ");
-	let cappedRank2 = starterTalents[1].rank.split(" ").map(capitalize).join(" ");
+    let cappedRank2 = starterTalents[1].rank.split(" ").map(capitalize).join(" ");
 
 	let rankFirstChars1;
 	let rankFirstChars2;

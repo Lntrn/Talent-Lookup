@@ -246,6 +246,15 @@ async function sendData(client, message, doc, sheet, dataArray, totalCount) {
 		}
 		cappedName = dataArray[k].name.split(" ").map(capitalize).join(" ");
 		cappedRank = dataArray[k].rank.split(" ").map(capitalize).join(" ");
+
+		console.log(cappedName)
+		if (cappedName.includes("{#}")) {
+			cappedName = cappedName.replace("{#}", "[Locked]")
+		} else if (cappedName.includes("{ }")){
+			cappedName = cappedName.replace("{ }", "[Unlocked]")
+		}
+		console.log(cappedName)
+
 		if (dataArray[k].rank === "uncommon") {
 			rankFirstChars = "UC";
 		} else if (dataArray[k].rank === "ultra rare"){

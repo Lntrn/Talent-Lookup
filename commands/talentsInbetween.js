@@ -342,6 +342,12 @@ async function sendData(client, message, doc, sheet, desiredRank, foundTalents, 
 
 			let cappedName = talent.name.split(" ").map(capitalize).join(" ");
 			let cappedRank = talent.rank.split(" ").map(capitalize).join(" ");
+
+			if (cappedName.includes("{#}")) {
+				cappedName = cappedName.replace("{#}", "[Locked]")
+			} else if (cappedName.includes("{_}")){
+				cappedName = cappedName.replace("{_}", "[Unlocked]")
+			}
 	
 			let rankFirstChars;
 	
