@@ -84,6 +84,18 @@ client.on("ready", async () => {
   }
 });
 
+client.on("error", (error) => {
+  if (Config.devmode) {
+    client.login(Secret.devToken);
+  } else {
+    client.login(Secret.token);
+  } 
+
+  let cmd = undefined
+  
+  ErrorLog.log(client, message, message.guild.id, error)
+});
+
 client.on("message", async (message) => {
 
   const owner = await client.users.fetch(Config.ownerID);

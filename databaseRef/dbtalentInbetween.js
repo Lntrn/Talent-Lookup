@@ -263,7 +263,7 @@ module.exports = {
 
              let talentDesc = talent.join(" \n");
 
-             let [part1, ...part2] = Discord.splitMessage(talentDesc, { maxLength: 2048 });
+            let [part1, ...part2] = Discord.splitMessage(talentDesc, { maxLength: 2048 });
 
             // Max characters were not reached so there is no "rest" in the array
             if (part2.length !== 0) { 

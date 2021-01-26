@@ -13,9 +13,9 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { exception } = require("console");
 
 module.exports = {
-			name: "talentsInbetween",
-			aliases: ["tib"],
-			description: "Checks for a talents inbetween two known talents with URLs to each.",
+			name: "plainTIB",
+			aliases: ["ptib"],
+			description: "Checks for a talents inbetween two known talents and returns as plain text in chat. No limit but does not return the urls of each talent.",
 			usage: "<talent one>, <talent two>, [if they put in a rank then filter by that rank, if not then show all inbetween]",
 			id: "7992",
 		async execute(client, message, args) {
@@ -216,29 +216,11 @@ async function compareTalents(client, message, sheet, starterTalents, doc, desir
 		talentList.push(data);
 	}
 	// twoRow is bigger
-
-	let talentCount = twoRow - oneRow;
-	// Limit the query to 35 rows
-	if (talentCount <= 35) {
-		for (let d = 0; d < talentList.length; d++) {
-			if (parseInt(talentList[d].row) > oneRow && parseInt(talentList[d].row) < twoRow) {
-				let data = talentList[d].row
-				talentsToFind.push(data);
-			}
-		}
-	} else {
-
-		let nextTalentRow = oneRow + 35;
-		let nextTalentCell = await sheet.getCell(nextTalentRow, 1);
-		let nextTalentName = nextTalentCell.value;
-		console.log(nextTalentName)
-
-		let emb = new Discord.MessageEmbed()
-			.setTitle("Too large of range!")
-			.setDescription(`The next talent you can search for is ${nextTalentName}`)
-
-		message.channel.send(emb);
-		return;
+	for (let d = 0; d < talentList.length; d++) {
+		if (parseInt(talentList[d].row) > oneRow && parseInt(talentList[d].row) < twoRow) {
+			let data = talentList[d].row
+            talentsToFind.push(data);
+        }
 	}
 
 	getMoreData(client, message, sheet, starterTalents, doc, desiredRank, talentsToFind);
@@ -248,18 +230,11 @@ async function getMoreData(client, message, sheet, starterTalents, doc, desiredR
 
 	let foundTalents = [];
 
-	let embed = new Discord.MessageEmbed()
-		.setTitle(message.author.tag)
-		.setThumbnail(message.author.avatarURL())
-		.setColor("#310ff5")
-		.setDescription(`Collecting data for ${talentsToFind.length} talents.`)
-
 	for (row of talentsToFind) {
 
 		// Finds each talent's name and hyperlink, "v" increasing means down one row in the spreadsheet || This auto sorts the entire array for us * note to self
 		let nameCell = await sheet.getCell(row, 1);
 		let name = nameCell.value.toLowerCase();
-		console.log(name)
 		let url = nameCell.hyperlink.replaceAll(" ", "_");
 
 		// Finds each talent's weight
@@ -280,89 +255,63 @@ async function getMoreData(client, message, sheet, starterTalents, doc, desiredR
 			rank = "ultra rare";
 		} else if (rank === "5") {
 			rank = "epic";
-		}
+        }
+        
+        if (desiredRank === undefined) {
+            let data = {
+                "name": name,
+                "minWeight": weightArray[0],
+                "maxWeight": weightArray[1].replace("!", ""),
+                "rank": rank,
+                "row": row,
+                "url": url
+            }
 
-		let data = {
-			"name": name,
-			"minWeight": weightArray[0],
-			"maxWeight": weightArray[1].replace("!", ""),
-			"rank": rank,
-			"row": row,
-			"url": url
-		}
+            foundTalents.push(data);
+        } else if (desiredRank === rank){
+            let data = {
+                "name": name,
+                "minWeight": weightArray[0],
+                "maxWeight": weightArray[1].replace("!", ""),
+                "rank": rank,
+                "row": row,
+                "url": url
+            }
 
-		foundTalents.push(data);
-
+            foundTalents.push(data);
+        }
 	}
 	//console.log(foundTalents.length)
 
-	sendData(client, message, doc, sheet, desiredRank, foundTalents, starterTalents, embed);
+	sendData(client, message, doc, sheet, desiredRank, foundTalents, starterTalents);
 }
 
-async function sendData(client, message, doc, sheet, desiredRank, foundTalents, starterTalents, embed) {
+async function sendData(client, message, doc, sheet, desiredRank, foundTalents, starterTalents) {
 
 	let t = 0;
-	let embedDescArray = [];
+    let embedDescArray = [];
 
-	if (desiredRank !== undefined) {
+    for (talent of foundTalents) {
 
-		let cappedDesired = desiredRank.split(" ").map(capitalize).join(" ");
-
-		let s = 0;
-
-		for (talent of foundTalents) {
-
-			let cappedName = talent.name.split(" ").map(capitalize).join(" ");
-			let cappedRank = talent.rank.split(" ").map(capitalize).join(" ");
+		let cappedName = talent.name.split(" ").map(capitalize).join(" ");
+		let cappedRank = talent.rank.split(" ").map(capitalize).join(" ");
 	
-			let rankFirstChars;
+		let rankFirstChars;
 	
-			if (talent.rank === "uncommon") {
-				rankFirstChars = "UC";
-			} else if (talent.rank === "ultra rare") {
+		if (talent.rank === "uncommon") {
+			rankFirstChars = "UC";
+		} else if (talent.rank === "ultra rare") {
 				rankFirstChars = "UR";
-			} else {
+		} else {
 				rankFirstChars = `${cappedRank.charAt(0)} `;
-			}
-
-			if (talent.rank === desiredRank) {
-				desc = `> \`${talent.minWeight} - ${talent.maxWeight}\` \`${rankFirstChars}\` [${cappedName}](${talent.url})`;
-				embedDescArray.push(desc);
-				s++;
-			}
-			t++;
-
 		}
 
-		embed.setFooter(`Sent ${s} out of ${t} talents matching rank ${cappedDesired}`)
+		let desc = `> \`${talent.minWeight} - ${talent.maxWeight}\` \`${rankFirstChars}\` **${cappedName}**`;
 
-	} else {
-
-		for (talent of foundTalents) {
-
-			let cappedName = talent.name.split(" ").map(capitalize).join(" ");
-			let cappedRank = talent.rank.split(" ").map(capitalize).join(" ");
-	
-			let rankFirstChars;
-	
-			if (talent.rank === "uncommon") {
-				rankFirstChars = "UC";
-			} else if (talent.rank === "ultra rare") {
-				rankFirstChars = "UR";
-			} else {
-				rankFirstChars = `${cappedRank.charAt(0)} `;
-			}
-
-			let desc = `> \`${talent.minWeight} - ${talent.maxWeight}\` \`${rankFirstChars}\` [${cappedName}](${talent.url})`;
-
-			embedDescArray.push(desc);
-			t++;
+		embedDescArray.push(desc);
+		t++;
 			
-		}
-
-		embed.setFooter(`Returned ${t} talents`)
-
-	}
+    }
 
 	let cappedName1 = starterTalents[0].name.split(" ").map(capitalize).join(" ");
 	let cappedName2 = starterTalents[1].name.split(" ").map(capitalize).join(" ");
@@ -388,33 +337,25 @@ async function sendData(client, message, doc, sheet, desiredRank, foundTalents, 
 		rankFirstChars2 = `${cappedRank1.charAt(0)} `;
 	}
 
-	let talentOne = `\`${starterTalents[0].minWeight} - ${starterTalents[0].maxWeight}\` \`${rankFirstChars1}\` [${cappedName1}](${starterTalents[0].url})`;
-	let talentTwo = `\`${starterTalents[1].minWeight} - ${starterTalents[1].maxWeight}\` \`${rankFirstChars2}\` [${cappedName2}](${starterTalents[1].url})`;
+	let talentOne = `\`${starterTalents[0].minWeight} - ${starterTalents[0].maxWeight}\` \`${rankFirstChars1}\` **${cappedName1}**`;
+	let talentTwo = `\`${starterTalents[1].minWeight} - ${starterTalents[1].maxWeight}\` \`${rankFirstChars2}\` **${cappedName2}**`;
 
 	embedDescArray.unshift(talentOne);
 	embedDescArray.push(talentTwo);
 
-	let talentDesc = embedDescArray.join("\n");
-	if (talentDesc.length < 2048) {
-		embed.setDescription(talentDesc);
-	} else {
-		let [part1, ...part2] = Discord.splitMessage(talentDesc, { maxLength: 2047 });
-		embed.setDescription(part1);
+    let talentDesc = embedDescArray.join("\n");
 
-        // Max characters were not reached so there is no "rest" in the array
-         if (part2.length !== 0) { 
-			let part2Joined = part2.join(" \n");
-            //talentsEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part2Joined)
-            let [part2cont, ...part3] = Discord.splitMessage(part2Joined, { maxLength: 1023 });
-            embed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part2cont);
-
-            if (part3.length !== 0) {
-                let part3Joined = part3.join(" \n");
-                embed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part3Joined);
-            }
-        }
-	}
-	message.channel.send(embed)
+    let oneRow = parseInt(starterTalents[0].row);
+	let twoRow = parseInt(starterTalents[1].row);
+    let rowCount = twoRow - oneRow;
+    
+    if (rowCount > 50) {
+        message.author.send(`Found ${embedDescArray.length - 2} talents, please wait.`);
+        message.author.send(talentDesc, { split: true }).then(message.react(Emojis.intellect.id)).catch((error) => message.channel.send(`Turn on your dms ${message.author}`));
+    } else {
+        message.channel.send(`Found ${embedDescArray.length - 2} talents, please wait.`);
+        message.channel.send(talentDesc, { split: true }).then(message.react(Emojis.intellect.id)).catch((error) => message.channel.send(`err`));
+    }
 
 }
 
