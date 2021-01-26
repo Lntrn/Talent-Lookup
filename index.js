@@ -93,7 +93,7 @@ client.on("error", (error) => {
 
   let cmd = undefined
   
-  ErrorLog.log(client, message, message.guild.id, error)
+  ErrorLog.log(client, message, message.guild.id, cmd, error)
 });
 
 client.on("message", async (message) => {
