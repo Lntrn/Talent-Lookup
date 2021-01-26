@@ -75,7 +75,7 @@ async function prepareArgs(client, message, args, doc) {
 		// Replacing dashes and undersoces with spaces
 		if (trimmed.includes("-") || trimmed.includes("_")) {
 			trimmed = trimmed.replace("-", " ");
-			trimmed = trimmed.replace("_", " ");
+			//trimmed = trimmed.replace("_", " ");
 		} 
 
 		// Substring of talents that need dashes in their name
@@ -89,6 +89,12 @@ async function prepareArgs(client, message, args, doc) {
 		if (exceptions.some(v => v === trimmed.replace("-", " "))) {
 			trimmed = trimmed.replace("-", " ");
 			console.log(trimmed + " 2")
+		}
+		if (trimmed = "unlocked") {
+			trimmed = "{_}"
+		}
+		if (trimmed = "locked") {
+			trimmed = "{#}"
 		}
 
 		// If "trimmed" does not exist, send missing talents message
