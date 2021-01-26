@@ -39,7 +39,7 @@ module.exports = {
 			prepareArgs(client, message, args, doc);
 			
 			// Log the command
-			CommandLog.logCommand(client, message, message.guild.id, "talent Search");
+			CommandLog.logCommand(client, message, message.guild.id, "ptib");
 			
 
 		}		
