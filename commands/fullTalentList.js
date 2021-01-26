@@ -8,7 +8,7 @@ const Discord = require("discord.js");
 const Emojis = require("../utilities/emojis.js");
 
 const Secret = require("../utilities/sheetCredentials.json");
-
+		
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { exception } = require("console");
 
@@ -45,8 +45,8 @@ module.exports = {
 			    // Log the command
 			    CommandLog.logCommand(client, message, message.guild.id, "full List");
             } else {
-                return message.channel.send("You do not have permission to use this command.");
-            }
+				return message.channel.send("You do not have permission to use this command.")
+			}
 
 		}		
 };

@@ -84,18 +84,19 @@ async function prepareArgs(client, message, args, doc) {
 		// Checking to see if any of the arguments contain a variable in the above array
 		if (array.some(v => trimmed.includes(v))) {
 			trimmed = trimmed.replace(" ", "-");
-			console.log(trimmed + " 1")
 		} 
 		if (exceptions.some(v => v === trimmed.replace("-", " "))) {
 			trimmed = trimmed.replace("-", " ");
-			console.log(trimmed + " 2")
 		}
-		if (trimmed = "unlocked") {
+		console.log(trimmed)
+		if (trimmed === "unlocked") {
 			trimmed = "{_}"
 		}
-		if (trimmed = "locked") {
+		console.log(trimmed)
+		if (trimmed === "locked") {
 			trimmed = "{#}"
 		}
+		console.log(trimmed)
 
 		// If "trimmed" does not exist, send missing talents message
 		if (trimmed.length !== 0) {
@@ -105,7 +106,7 @@ async function prepareArgs(client, message, args, doc) {
 			p++;
 		} else {
 			// missing talents message
-			message.channel.send(`error:  ${trimmed}`);
+			message.channel.send(`error: ${trimmed}`);
 		}
 	}
 
