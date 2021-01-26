@@ -68,45 +68,39 @@ async function prepareArgs(client, message, args, doc) {
 	
 	// Looping over each talent in the argsArray || Line 49
 	for (talent of argsArray) {
-
-		if (talent.length < 4) {
-			message.channel.send(`minimum of 4 characters per search term. ${talent}`)
-		} else {
 			
-			// Removing spaces at the start and end of each talent
-			let trimmed = talent.trim();
+		// Removing spaces at the start and end of each talent
+		let trimmed = talent.trim();
 
-			// Replacing dashes and undersoces with spaces
-			if (trimmed.includes("-") || trimmed.includes("_")) {
-				trimmed = trimmed.replace("-", " ");
-				trimmed = trimmed.replace("_", " ");
-			} 
+		// Replacing dashes and undersoces with spaces
+		if (trimmed.includes("-") || trimmed.includes("_")) {
+			trimmed = trimmed.replace("-", " ");
+			trimmed = trimmed.replace("_", " ");
+		} 
 
-			// Substring of talents that need dashes in their name
-			let array = ["boon", "bringer", "giver", "dealer", "shot", "eye", "sniper", "away", "defy", "off", "it", "proof", "ward", "storm tooth", "power taker", "quick witted"];
-			let exceptions = ["evil eye", "curse giver", "keen eyes", "evil eye", "ward wrecker", "steal ward", "clean ward", "biting cold", "critical hitter", "critical striker", "drop it", "spirit armor", "spirit blade", "spirit shield", "sprite queen", "sprite time", "stun recalcitrant"]
-			// Checking to see if any of the arguments contain a variable in the above array
-			if (array.some(v => trimmed.includes(v))) {
-				trimmed = trimmed.replace(" ", "-");
-				console.log(trimmed + " 1")
-			} 
-			if (exceptions.some(v => v === trimmed.replace("-", " "))) {
-				trimmed = trimmed.replace("-", " ");
-				console.log(trimmed + " 2")
-			}
-
-			// If "trimmed" does not exist, send missing talents message
-			if (trimmed.length !== 0) {
-				// Adding
-				talentArray[p] = trimmed;
-				// Moving to the next talent in the array
-				p++;
-			} else {
-				// missing talents message
-				message.channel.send(`error:  ${trimmed}`);
-			}
+		// Substring of talents that need dashes in their name
+		let array = ["boon", "bringer", "giver", "dealer", "shot", "eye", "sniper", "away", "defy", "off", "it", "proof", "ward", "storm tooth", "power taker", "quick witted"];
+		let exceptions = ["evil eye", "curse giver", "keen eyes", "evil eye", "ward wrecker", "steal ward", "clean ward", "biting cold", "critical hitter", "critical striker", "drop it", "spirit armor", "spirit blade", "spirit shield", "sprite queen", "sprite time", "stun recalcitrant"]
+		// Checking to see if any of the arguments contain a variable in the above array
+		if (array.some(v => trimmed.includes(v))) {
+			trimmed = trimmed.replace(" ", "-");
+			console.log(trimmed + " 1")
+		} 
+		if (exceptions.some(v => v === trimmed.replace("-", " "))) {
+			trimmed = trimmed.replace("-", " ");
+			console.log(trimmed + " 2")
 		}
 
+		// If "trimmed" does not exist, send missing talents message
+		if (trimmed.length !== 0) {
+			// Adding
+			talentArray[p] = trimmed;
+			// Moving to the next talent in the array
+			p++;
+		} else {
+			// missing talents message
+			message.channel.send(`error:  ${trimmed}`);
+		}
 	}
 
 	findTalents(client, message, args, doc, talentArray, totalCount);
