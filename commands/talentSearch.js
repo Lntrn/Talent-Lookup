@@ -84,18 +84,18 @@ async function prepareArgs(client, message, args, doc) {
 		// Checking to see if any of the arguments contain a variable in the above array
 		if (array.some(v => trimmed.includes(v))) {
 			trimmed = trimmed.replace(" ", "-");
-			console.log(trimmed + " 1")
 		} 
 		if (exceptions.some(v => v === trimmed.replace("-", " "))) {
 			trimmed = trimmed.replace("-", " ");
-			console.log(trimmed + " 2")
 		}
-		if (trimmed = "unlocked") {
-			trimmed = "{_}"
+		console.log(trimmed)
+		if (trimmed.includes("unlocked")) {
+			trimmed = trimmed.replace("unlocked", "{_}");
 		}
-		if (trimmed = "locked") {
-			trimmed = "{#}"
+		if (trimmed.includes("locked")) {
+			trimmed = trimmed.replace("locked", "{#}");
 		}
+		console.log(trimmed)
 
 		// If "trimmed" does not exist, send missing talents message
 		if (trimmed.length !== 0) {

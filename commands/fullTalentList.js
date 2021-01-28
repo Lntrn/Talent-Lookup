@@ -58,9 +58,11 @@ function capitalize(str) {
 
 async function getData(client, message, args, sheet, sentMessage) {
 
-    let talentList = [];
+	let talentList = [];
+	
+	let maxRow = sheet.cellStats.nonEmpty/3;
 
-    for (let row = 0; row < 375; row++) {
+    for (let row = 0; row < maxRow; row++) {
         // Finds each talent's name
         let nameCell = await sheet.getCell(row, 1);
         let name = nameCell.value.toLowerCase();
