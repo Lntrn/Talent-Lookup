@@ -85,6 +85,12 @@ async function prepareArgs(client, message, args, doc) {
 			trimmed = trimmed.replace("-", " ");
 			console.log(trimmed + " 2")
 		}
+		if (trimmed.includes("unlocked")) {
+			trimmed = trimmed.replace("unlocked", "{_}");
+		}
+		if (trimmed.includes("locked")) {
+			trimmed = trimmed.replace("locked", "{#}");
+		}
 
 		// If "trimmed" does not exist, send missing talents message
 		if (trimmed.length !== 0) {
@@ -377,6 +383,19 @@ async function sendData(client, message, doc, sheet, desiredRank, foundTalents, 
 	let cappedName2 = starterTalents[1].name.split(" ").map(capitalize).join(" ");
 	let cappedRank1 = starterTalents[0].rank.split(" ").map(capitalize).join(" ");
 	let cappedRank2 = starterTalents[1].rank.split(" ").map(capitalize).join(" ");
+
+	if (cappedName1.includes("unlocked")) {
+		cappedName1 = cappedName1.replace("{_}", "unlocked");
+	}
+	if (cappedName1.includes("locked")) {
+		cappedName1 = cappedName1.replace("{#}", "locked");
+	}
+	if (cappedName2.includes("unlocked")) {
+		cappedName2 = cappedName2.replace("{_}", "unlocked");
+	}
+	if (cappedName2.includes("locked")) {
+		cappedName2 = cappedName2.replace("{#}", "locked");
+	}
 
 	let rankFirstChars1;
 	let rankFirstChars2;

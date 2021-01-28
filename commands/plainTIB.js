@@ -72,6 +72,12 @@ async function prepareArgs(client, message, args, doc) {
 			trimmed = trimmed.replace("-", " ");
 			trimmed = trimmed.replace("_", " ");
 		}
+		if (trimmed.includes("unlocked")) {
+			trimmed = trimmed.replace("unlocked", "{_}");
+		}
+		if (trimmed.includes("locked")) {
+			trimmed = trimmed.replace("locked", "{#}");
+		}
 
 		// Substring of talents that need dashes in their name
 		let array = ["boon", "bringer", "giver", "dealer", "shot", "eye", "sniper", "away", "defy", "off", "it", "proof", "ward", "storm tooth", "power taker", "quick witted"];
@@ -325,7 +331,21 @@ async function sendData(client, message, doc, sheet, desiredRank, foundTalents, 
 	let cappedName1 = starterTalents[0].name.split(" ").map(capitalize).join(" ");
 	let cappedName2 = starterTalents[1].name.split(" ").map(capitalize).join(" ");
 	let cappedRank1 = starterTalents[0].rank.split(" ").map(capitalize).join(" ");
-    let cappedRank2 = starterTalents[1].rank.split(" ").map(capitalize).join(" ");
+	let cappedRank2 = starterTalents[1].rank.split(" ").map(capitalize).join(" ");
+	
+	if (cappedName1.includes("{_}")) {
+		cappedName1 = cappedName1.replace("{_}", "[Unlocked]");
+	}
+	if (cappedName1.includes("{#}")) {
+		cappedName1 = cappedName1.replace("{#}", "[Locked]");
+	}
+	if (cappedName2.includes("{_}")) {
+		cappedName2 = cappedName2.replace("{_}", "[Unlocked]");
+	}
+	if (cappedName2.includes("{#}")) {
+		cappedName2 = cappedName2.replace("{#}", "[Locked]");
+	}
+		
 
 	let rankFirstChars1;
 	let rankFirstChars2;
