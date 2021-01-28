@@ -129,12 +129,13 @@ async function inputTalents(client, message, desiredRank, argsArray, doc) {
 	let sheet = doc.sheetsByIndex[0];
 
 	await sheet.loadCells('A1:C');
+	let maxRow = sheet.cellStats.nonEmpty/3;
 
 	// Create the talentList array
 	let starterTalents = [];
 
 	// Loop to search the spreadsheet for matching talent names
-	for (let row = 0; row < 375; row++) {
+	for (let row = 0; row < maxRow; row++) {
 
 		// Finds each talent's name and hyperlink, "v" increasing means down one row in the spreadsheet || This auto sorts the entire array for us * note to self
 		let nameCell = await sheet.getCell(row, 1);
@@ -199,7 +200,9 @@ async function compareTalents(client, message, sheet, starterTalents, doc, desir
 	let talentList = []; 
 	let talentsToFind = [];
 
-	for (let row = 0; row < 375; row++) {
+	let maxRow = sheet.cellStats.nonEmpty/3;
+
+	for (let row = 0; row < maxRow; row++) {
 		
 		// Finds each talent, "v" increasing means down one row in the spreadsheet
 		let tal = await sheet.getCell(row, 0);

@@ -88,13 +88,11 @@ async function prepareArgs(client, message, args, doc) {
 		if (exceptions.some(v => v === trimmed.replace("-", " "))) {
 			trimmed = trimmed.replace("-", " ");
 		}
-		console.log(trimmed)
-		if (trimmed === "unlocked") {
-			trimmed = "{_}"
+		if (trimmed.includes("unlocked")) {
+			trimmed = trimmed.replace("unlocked", "{_}");
 		}
-		console.log(trimmed)
-		if (trimmed === "locked") {
-			trimmed = "{#}"
+		if (trimmed.includes("locked")) {
+			trimmed = trimmed.replace("locked", "{#}");
 		}
 		console.log(trimmed)
 
@@ -179,7 +177,7 @@ async function getWeights(client, message, doc, sheet, listArray, totalCount) {
 		weights[g] = data;
 	}
 
-	console.log(weights)
+	//console.log(weights)
 
 	getRanks(client, message, doc, sheet, weights, totalCount);
 }
@@ -194,7 +192,7 @@ async function getRanks(client, message, doc, sheet, weights, totalCount) {
 		tal = await sheet.getCell(weights[g].row, 2);
 
 		let rank = tal.value.charAt(0);
-		console.log(rank)
+		//console.log(rank)
 
 		if (rank === "1") {
 			rank = "common";
@@ -234,6 +232,7 @@ async function sendData(client, message, doc, sheet, dataArray, totalCount) {
 
 
 	let embedDescArray = [];
+	let secondArray = [];
 	let cappedName;
 	let cappedRank;
 	let rankFirstChars;
@@ -248,13 +247,11 @@ async function sendData(client, message, doc, sheet, dataArray, totalCount) {
 		cappedName = dataArray[k].name.split(" ").map(capitalize).join(" ");
 		cappedRank = dataArray[k].rank.split(" ").map(capitalize).join(" ");
 
-		console.log(cappedName)
 		if (cappedName.includes("{#}")) {
 			cappedName = cappedName.replace("{#}", "[Locked]")
 		} else if (cappedName.includes("{ }")){
 			cappedName = cappedName.replace("{ }", "[Unlocked]")
 		}
-		console.log(cappedName)
 
 		if (dataArray[k].rank === "uncommon") {
 			rankFirstChars = "UC";
@@ -264,41 +261,61 @@ async function sendData(client, message, doc, sheet, dataArray, totalCount) {
 			rankFirstChars = `${cappedRank.charAt(0)} `;
 		}
 		rankFirstChar = cappedRank.charAt(0)
-		embedDescArray[k] = `\`${dataArray[k].minWeight} - ${dataArray[k].maxWeight}\` \`${rankFirstChars}\` [${cappedName}](${dataArray[k].url})`
+		embedDescArray[k] = `\`${dataArray[k].minWeight} - ${dataArray[k].maxWeight}\` \`${rankFirstChars}\` [${cappedName}](${dataArray[k].url})`;
+		secondArray[k] = `> \`${dataArray[k].minWeight} - ${dataArray[k].maxWeight}\` \`${rankFirstChars}\` **${cappedName}**`;
 	}
 
-	let talentDesc = embedDescArray.join("\n"); 
+	let talentDesc = embedDescArray.join("\n");
 
-	// If the first array was over  2048 characters, split it up. Max 25 fields per embed
-	let [part1, ...part2] = Discord.splitMessage(talentDesc, { maxLength: 2047 });
+	if (talentDesc.length > 4000) {
+		secondArray.unshift("~~~~~ start ~~~~~");
+		secondArray.push("~~~~~ end ~~~~~");
+		talentDesc = secondArray.join("\n");
+		message.author.send(talentDesc, { split: true }).then(message.react(Emojis.intellect.id)).catch((error) => message.channel.send(`Turn on your dms ${message.author}`));
+	} else {
 
-    // Max characters were not reached so there is no "rest" in the array
-    if (part2.length !== 0) { 
-        let part2Joined = part2.join("\n");
-		let [part2cont, ...part3] = Discord.splitMessage(part2Joined, { maxLength: 1024 });
-		// Add a field with "part2cont" as the content
-        searchEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part2cont);
+		// If the first array was over  2048 characters, split it up. Max 25 fields per embed
+		let [part1, ...part2] = Discord.splitMessage(talentDesc, { maxLength: 2048 });
 
-        if (part3.length !== 0) {
-            let part3Joined = part3.join("\n");
-			searchEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part3Joined);
-			let [part3cont, ...part4] = Discord.splitMessage(part2Joined, { maxLength: 1024 });
+    	// Max characters were not reached so there is no "rest" in the array
+    	if (part2.length !== 0) { 
+			console.log("part2")
+			searchEmbed.setDescription(part1);
+			let part2Joined = part2.join("\n");
+			let [part2cont, ...part3] = Discord.splitMessage(part2Joined, { maxLength: 1024 });
+			searchEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part2cont);
+
 			if (part3.length !== 0) {
+				console.log("part3")
+		
 				let part3Joined = part3.join("\n");
-				searchEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part3Joined);
-				let [part3cont, ...part4] = Discord.splitMessage(part2Joined, { maxLength: 1024 });
+
+				let [part3cont, ...part4] = Discord.splitMessage(part3Joined, { maxLength: 1024 });
+				searchEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part3cont);
 				if (part4.length !== 0) {
+					console.log("part4")
+
 					let part4Joined = part4.join("\n");
-					searchEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part4Joined);
-					//let [part4cont, ...part5] = Discord.splitMessage(part2Joined, { maxLength: 1024 });
+
+					let [part4cont, ...part5] = Discord.splitMessage(part2Joined, { maxLength: 1024 });
+					searchEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part4cont);
+					if (part5.length !== 0) {
+						console.log("part5")
+
+						let part5Joined = part5.join("\n");
+						searchEmbed.addField("ˡᵒᵗˢ ᵒᶠ ᵗᵃˡᵉⁿᵗˢ ʰᵘʰ", part5Joined);
+						//let [part4cont, ...part5] = Discord.splitMessage(part2Joined, { maxLength: 1024 });
+					}
 				}
 			}
-        }
-    }
+		} else {
+			searchEmbed.setDescription(talentDesc);
+		}
+		
+		searchEmbed.setFooter(`Returned ${dataArray.length} talents`);
+		message.channel.send(searchEmbed);
+	}
 
-	searchEmbed.setDescription(talentDesc);
-	searchEmbed.setFooter(`Returned ${dataArray.length} talents`);
-	message.channel.send(searchEmbed);
 			
 }
 
