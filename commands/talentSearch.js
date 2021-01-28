@@ -310,11 +310,11 @@ async function sendData(client, message, doc, sheet, dataArray, totalCount) {
 		} else {
 			searchEmbed.setDescription(talentDesc);
 		}
+		
+		searchEmbed.setFooter(`Returned ${dataArray.length} talents`);
+		message.channel.send(searchEmbed);
 	}
 
-	searchEmbed.setDescription(talentDesc);
-	searchEmbed.setFooter(`Returned ${dataArray.length} talents`);
-	message.channel.send(searchEmbed);
 			
 }
 
