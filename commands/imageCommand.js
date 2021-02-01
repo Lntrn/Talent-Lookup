@@ -8,8 +8,6 @@ const Format = require("../utilities/format.js");
 const Discord = require("discord.js");
 const Emojis = require("../utilities/emojis.js");
 
-const Secret = require("../utilities/sheetCredentials.json");
-
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 module.exports = {
@@ -53,8 +51,8 @@ async function connectToGoogle(client, message, args) {
 
 	// Login to Google's server
     await doc.useServiceAccountAuth({
-		client_email: Secret.client_email,
-		private_key: Secret.private_key,
+		client_email: process.env.CLIENT_EMAIL,
+		private_key: process.env.PRIVATE_KEY.replace(/\\n/gm, '\n'),
 	});
 
 	// Load the spread sheet

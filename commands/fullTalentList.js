@@ -7,8 +7,6 @@ const CommandLog = require("../utilities/commandLog.js");
 const Format = require("../utilities/format.js");
 const Discord = require("discord.js");
 const Emojis = require("../utilities/emojis.js");
-
-const Secret = require("../utilities/sheetCredentials.json");
 		
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { exception } = require("console");
@@ -28,8 +26,8 @@ module.exports = {
 
 			    // Login to Google's server
     		    await doc.useServiceAccountAuth({
-				    client_email: process.env.client_email,
-				    private_key: process.env.private_key.replace(/\\n/gm, '\n'),
+				    client_email: process.env.CLIENT_EMAIL,
+				    private_key: process.env.PRIVATE_KEY.replace(/\\n/gm, '\n'),
 			    });
 
 			    // Load the spread sheet

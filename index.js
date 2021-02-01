@@ -1,4 +1,3 @@
-const Secret = require("./secret.json");
 const Discord = require("discord.js");
 const Functions = require("./utilities/functions.js")
 require('dotenv-flow').config();
@@ -87,9 +86,9 @@ client.on("ready", async () => {
 
 client.on("error", (error) => {
   if (Config.devmode) {
-    client.login(Secret.devToken);
+    client.login(process.env.DEVTOKEN);
   } else {
-    client.login(Secret.token);
+    client.login(process.env.TOKEN);
   } 
 
   let cmd = undefined

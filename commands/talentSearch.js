@@ -8,8 +8,6 @@ const Format = require("../utilities/format.js");
 const Discord = require("discord.js");
 const Emojis = require("../utilities/emojis.js");
 
-const Secret = require("../utilities/sheetCredentials.json");
-
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 module.exports = {
