@@ -5,3 +5,4 @@ sheetCredentials.json
 databaseRef/
 databaseRef/dbtalentInbetween.js
 databaseRef/dbAddTalent.js
+*.env

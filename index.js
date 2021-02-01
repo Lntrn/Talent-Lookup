@@ -1,6 +1,7 @@
 const Secret = require("./secret.json");
 const Discord = require("discord.js");
 const Functions = require("./utilities/functions.js")
+require('dotenv-flow').config();
 const fs = require("fs");
 const Enmap = require("enmap");
 const Channels = require("./utilities/channels.js");
@@ -192,7 +193,7 @@ client.on("guildUpdate", (oldGuild, newGuild) => {
 
 
 if (Config.devmode) {
-  client.login(Secret.devToken);
+  client.login(process.env.DEVTOKEN);
 } else {
-  client.login(Secret.token);
+  client.login(process.env.TOKEN);
 }

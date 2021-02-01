@@ -1,4 +1,5 @@
 const fs = require("fs");
+require('dotenv-flow');
 
 const Channels = require("../utilities/channels.js");
 const Config = JSON.parse(fs.readFileSync('./utilities/config.json', 'utf8'));
@@ -25,8 +26,8 @@ module.exports = {
 
 			// Login to Google's server
     		await doc.useServiceAccountAuth({
-				client_email: Secret.client_email,
-				private_key: Secret.private_key,
+				client_email: process.env.CLIENT_EMAIL,
+				private_key: process.env.PRIVATE_KEY.replace(/\\n/gm, '\n'),
 			});
 
 			// Load the spread sheet
