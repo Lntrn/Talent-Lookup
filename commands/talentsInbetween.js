@@ -146,7 +146,14 @@ async function inputTalents(client, message, desiredRank, argsArray, doc) {
 		let nameCell = await sheet.getCell(row, 1);
 		let name = nameCell.value.toLowerCase();
 		//console.log(name)
-		let url = nameCell.hyperlink.replace(" ", "_");
+		let urlLetters = nameCell.hyperlink.split("");
+		for (f = 0; f < urlLetters.length; f++) {
+			//console.log(letter)
+			if (urlLetters[f].includes(" ")) {
+				urlLetters[f] = "_";
+			}
+		}
+		let url = urlLetters.join("");
 
 		// Finds each talent's weight
 		let talWeight = await sheet.getCell(row, 0);
@@ -268,7 +275,17 @@ async function getMoreData(client, message, sheet, starterTalents, doc, desiredR
 		let nameCell = await sheet.getCell(row, 1);
 		let name = nameCell.value.toLowerCase();
 		console.log(name)
-		let url = nameCell.hyperlink.replaceAll(" ", "_");
+
+		let urlLetters = nameCell.hyperlink.split("");
+		for (f = 0; f < urlLetters.length; f++) {
+			//console.log(letter)
+			if (urlLetters[f].includes(" ")) {
+				urlLetters[f] = "_";
+			}
+		}
+		//console.log(pain)	
+		let url = urlLetters.join("");
+		//console.log(url)
 
 		// Finds each talent's weight
 		let talWeight = await sheet.getCell(row, 0);

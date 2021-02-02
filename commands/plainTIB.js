@@ -243,7 +243,6 @@ async function getMoreData(client, message, sheet, starterTalents, doc, desiredR
 		// Finds each talent's name and hyperlink, "v" increasing means down one row in the spreadsheet || This auto sorts the entire array for us * note to self
 		let nameCell = await sheet.getCell(row, 1);
 		let name = nameCell.value.toLowerCase();
-		let url = nameCell.hyperlink.replaceAll(" ", "_");
 
 		// Finds each talent's weight
 		let talWeight = await sheet.getCell(row, 0);
@@ -272,7 +271,6 @@ async function getMoreData(client, message, sheet, starterTalents, doc, desiredR
                 "maxWeight": weightArray[1].replace("!", ""),
                 "rank": rank,
                 "row": row,
-                "url": url
             }
 
             foundTalents.push(data);
@@ -283,7 +281,6 @@ async function getMoreData(client, message, sheet, starterTalents, doc, desiredR
                 "maxWeight": weightArray[1].replace("!", ""),
                 "rank": rank,
                 "row": row,
-                "url": url
             }
 
             foundTalents.push(data);
