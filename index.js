@@ -13,14 +13,16 @@ let hours = date.getHours();
 let minutes = date.getMinutes();
 let seconds = date.getSeconds();
 
-if (seconds.length === 1) {
+let sec = `${seconds}`
+if (sec.length === 1) {
   seconds = `${seconds}0`
 } 
-if (minutes.length === 1) {
+let min = `${minutes}`
+if (min.length === 1) {
   minutes = `${minutes}0`
 } 
 if (hours.length === 1) {
-  hours = `${hours}0`
+  hours = `${hours}`
 } 
 
 let startupMessage = `Client online! **${hours}:${minutes}:${seconds}**`

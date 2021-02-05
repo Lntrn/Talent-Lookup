@@ -283,7 +283,6 @@ async function getMoreData(client, message, sheet, starterTalents, doc, desiredR
 				urlLetters[f] = "_";
 			}
 		}
-		//console.log(pain)	
 		let url = urlLetters.join("");
 		//console.log(url)
 
