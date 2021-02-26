@@ -1,5 +1,5 @@
-const { createWorker } = require('tesseract.js');
 const fs = require("fs");
+require('dotenv-flow');
 
 const Channels = require("../utilities/channels.js");
 const Config = JSON.parse(fs.readFileSync('./utilities/config.json', 'utf8'));
@@ -11,60 +11,39 @@ const Emojis = require("../utilities/emojis.js");
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 module.exports = {
-			name: "imageCommand",
-			aliases: ["img"],
-			description: "",
-			usage: "",
-			id: "",
+			name: "oldTalentSearch",
+			aliases: ["oldts"],
+			description: "Checks for multiple talents in the database.",
+			usage: "<talent one>, <talent two>, etc...",
+			id: "7992",
 		async execute(client, message, args) {
 
-            terreract(client, message);
-            
+			// Spreadsheet ID || In between the /d/ and /edit in the spreadsheet's URL
+			// https://docs.google.com/spreadsheets/d/1pXHrhP__pWBkV4DBazMVlad4cv51hjJPq-es4EzQgw0/edit#gid=0
+			const doc = new GoogleSpreadsheet("1pXHrhP__pWBkV4DBazMVlad4cv51hjJPq-es4EzQgw0");
+
+			// Login to Google's server
+    		await doc.useServiceAccountAuth({
+				client_email: process.env.CLIENT_EMAIL,
+				private_key: process.env.PRIVATE_KEY.replace(/\\n/gm, '\n'),
+			});
+
+			// Load the spread sheet
+			await doc.loadInfo();
+
+			message.channel.send("connecting to database, please wait");
+
+			// Go to next function || Line 47
+			prepareArgs(client, message, args, doc);
+			
+			// Log the command
+			CommandLog.logCommand(client, message, message.guild.id, "old talent Search");
 		}
 };
-
-async function terreract(client, message, args) {
-
-    const worker = createWorker({
-        logger: m => console.log(m)
-      });
-      
-      (async () => {
-        await worker.load();
-        await worker.loadLanguage('eng');
-        await worker.initialize('eng');
-        const { data: { text } } = await worker.recognize(args[0]);
-        console.log(text);
-        await worker.terminate();
-      })();
-}
 
 //Function to automaically capitalise first letters of words
 function capitalize(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
-async function connectToGoogle(client, message, args) {
-    // Spreadsheet ID || In between the /d/ and /edit in the spreadsheet's URL
-	// https://docs.google.com/spreadsheets/d/1pXHrhP__pWBkV4DBazMVlad4cv51hjJPq-es4EzQgw0/edit#gid=0
-	const doc = new GoogleSpreadsheet("1pXHrhP__pWBkV4DBazMVlad4cv51hjJPq-es4EzQgw0");
-
-	// Login to Google's server
-    await doc.useServiceAccountAuth({
-		client_email: process.env.CLIENT_EMAIL,
-		private_key: process.env.PRIVATE_KEY.replace(/\\n/gm, '\n'),
-	});
-
-	// Load the spread sheet
-	await doc.loadInfo();
-
-	message.channel.send("connecting to database, please wait");
-
-	// Go to next function || Line 47
-	prepareArgs(client, message, args, doc);
-			
-	// Log the command
-	CommandLog.logCommand(client, message, message.guild.id, "talent Search");
 }
 
 // Preparing the arguments for use
@@ -331,10 +310,52 @@ async function sendData(client, message, doc, sheet, dataArray, totalCount) {
 		} else {
 			searchEmbed.setDescription(talentDesc);
 		}
-
+		
 		searchEmbed.setFooter(`Returned ${dataArray.length} talents`);
 		message.channel.send(searchEmbed);
 	}
 
 			
+}
+
+async function spacer(message, client, args) {
+
+	let alphabetMap = new Map()
+		alphabetMap["a"] = "10"
+		alphabetMap["b"] = "10"
+		alphabetMap["c"] = "10"
+		alphabetMap["d"] = "10"
+		alphabetMap["e"] = "10"
+		alphabetMap["f"] = ""
+		alphabetMap["g"] = "10"
+		alphabetMap["h"] = "10"
+		alphabetMap["i"] = ""
+		alphabetMap["j"] = "1"
+		alphabetMap["k"] = "1"
+		alphabetMap["l"] = "1"
+		alphabetMap["m"] = "1"
+		alphabetMap["n"] = "1"
+		alphabetMap["o"] = "1"
+		alphabetMap["p"] = "1"
+		alphabetMap["q"] = "1"
+		alphabetMap["r"] = "1"
+		alphabetMap["s"] = "1"
+		alphabetMap["t"] = "1"
+		alphabetMap["u"] = "1"
+		alphabetMap["v"] = "1"
+		alphabetMap["w"] = "1"
+		alphabetMap["x"] = ""
+		alphabetMap["y"] = ""
+		alphabetMap["z"] = ""
+		
+	let argsStr = args.join("");
+	let letters = talents.split("");
+	
+	for (letter of letters) {
+
+		if (letter.length !== 0) {
+
+		}
+	}
+    
 }

@@ -1,0 +1,3612 @@
+[
+  {
+    "order": 0,
+    "name": "Furnace",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Furnace",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 1,
+    "name": "Dragonblade",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Dragonblade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 2,
+    "name": "Time Skip",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Time_Skip",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 3,
+    "name": "Hex Trained (Unlocked)",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Hex_Trained",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 4,
+    "name": "Ice Seed Farmer ()",
+    "rank": "",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice_Seed_Farmer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 5,
+    "name": "Thunder Lizard",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Thunder_Lizard",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 6,
+    "name": "Tranquilize",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Tranquilize",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 7,
+    "name": "Efficient",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Efficient",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 8,
+    "name": "Effective",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Effective",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 9,
+    "name": "Cunning",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Cunning",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 10,
+    "name": "Best of Show",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Best_Of_Show",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 11,
+    "name": "Stalwart",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Stalwart",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 12,
+    "name": "Adroit",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Adroit",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 13,
+    "name": "Life Hunter ()",
+    "rank": "",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life_Hunter",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 14,
+    "name": "Beetle Time ()",
+    "rank": "",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Beetle_Time",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 15,
+    "name": "Mulligan's Shuffle",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Mulligan's_Shuffle",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 16,
+    "name": "Extra Mana",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Extra_Mana",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 17,
+    "name": "Death Striker",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death_Striker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 18,
+    "name": "Angry Snowpig ()",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Angry_Snowpig",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 20,
+    "name": "Pierce Train",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Pierce_Train",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 21,
+    "name": "Storm Scout ()",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm_Scout",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 22,
+    "name": "Snow 'n Tell",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Snow_'n_Tell",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 23,
+    "name": "Death Scout ()",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death_Scout",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 24,
+    "name": "Guardian Wall",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Guardian_Wall",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 25,
+    "name": "Ice Assistant ()",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice_Assistant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 26,
+    "name": "Epic Fishing Luck",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Epic_Fishing_Luck",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 27,
+    "name": "Fishing Luck",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fishing_Luck",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 28,
+    "name": "Batusi",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Batusi",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 29,
+    "name": "Ice Rider ()",
+    "rank": "",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice_Rider",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 30,
+    "name": "Balance Finder ()",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance_Finder",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 31,
+    "name": "Brace For Impact ()",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Brace_For_Impact",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 32,
+    "name": "Pip O'Plenty",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Pip_O'Plenty",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 33,
+    "name": "Reveal Fish School",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Reveal_Fish_School",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 34,
+    "name": "Solar Aegis Trained ()",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Solar_Aegis_Trained",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 35,
+    "name": "Sharp-Shot",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Sharp-Shot",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 36,
+    "name": "Sharp-Eye",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Sharp-Eye",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 37,
+    "name": "Myth Seed Farmer ()",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth_Seed_Farmer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 38,
+    "name": "Greensleeves ()",
+    "rank": "",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Greensleeves",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 39,
+    "name": "Time of Legend Trained ()",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Time_of_Legend_Trained",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 40,
+    "name": "Spartan",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Spartan",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 41,
+    "name": "Stun Resistant",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Stun_Resistant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 42,
+    "name": "Stun Recalcitrant",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Stun_Recalcitrant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 43,
+    "name": "Death Seed Farmer ()",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death_Seed_Farmer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 44,
+    "name": "Tick Kicker",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Tick_Kicker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 45,
+    "name": "Gold Miner",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Gold_Miner",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 46,
+    "name": "Myth Assistant ()",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth_Assistant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 47,
+    "name": "Rage of Winter",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Rage_Of_Winter",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 49,
+    "name": "Fire-Shot",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire-Shot",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 50,
+    "name": "Fire-Sniper",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire-Sniper",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 51,
+    "name": "Fire-Eye",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire-Eye",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 52,
+    "name": "Storm Assailant",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm_Assailant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 55,
+    "name": "Balance Assistant",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance_Assistant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 56,
+    "name": "Snow Heal For You!",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Snow_Heal_For_You!",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 61,
+    "name": "Early Bird",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Early_Bird",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 62,
+    "name": "Sturdy",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Sturdy",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 63,
+    "name": "Well Trained",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Well_Trained",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 65,
+    "name": "Dependable",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Dependable",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 66,
+    "name": "Vigilant",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Vigilant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 67,
+    "name": "Cautious",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Cautious",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 68,
+    "name": "Intuitive",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Intuitive",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 69,
+    "name": "Attentive",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Attentive",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 70,
+    "name": "Perceptive",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Perceptive",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 71,
+    "name": "Empowerment",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Empowerment",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 75,
+    "name": "Vengeance",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Vengeance",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 77,
+    "name": "Conviction",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Conviction",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 79,
+    "name": "Tower Shield",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Tower_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 82,
+    "name": "SnowBorn",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:SnowBorn",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 83,
+    "name": "Fortify",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fortify",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 86,
+    "name": "Blade of Ice",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Blade_Of_Ice",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 87,
+    "name": "Bad Snowman",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Bad_Snowman",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 91,
+    "name": "Amplify",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Amplify",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 94,
+    "name": "Defender",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Defender",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 96,
+    "name": "Blocker",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Blocker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 100,
+    "name": "Spirit Blade",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Spirit_Blade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 101,
+    "name": "Unstoppable",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Unstoppable",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 102,
+    "name": "Strong",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Strong",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 103,
+    "name": "Monstrous",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Monstrous",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 104,
+    "name": "Giant",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Giant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 105,
+    "name": "Keen Eyes",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Keen_Eyes",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 106,
+    "name": "Gargantuan",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Gargantuan",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 108,
+    "name": "Accurate",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Accurate",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 110,
+    "name": "Pacify",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Pacify",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 113,
+    "name": "Storm-Eye",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm-Eye",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 114,
+    "name": "Storm-Shot",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm-Shot",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 115,
+    "name": "Storm-Sniper",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm-Sniper",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 116,
+    "name": "Stormclaw",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Stormclaw",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 121,
+    "name": "Healthy",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Healthy",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 129,
+    "name": "Ally Dragonblade",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ally_Dragonblade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 134,
+    "name": "Deathspear",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Deathspear",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 136,
+    "name": "Balance Striker",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance_Striker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 137,
+    "name": "Balance Assailant",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance_Assailant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 140,
+    "name": "Death-Eye",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death-Eye",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 141,
+    "name": "Death-Shot",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death-Shot",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 142,
+    "name": "Death-Sniper",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death-Sniper",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 143,
+    "name": "Ice-Boon",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice-Boon",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 144,
+    "name": "Pain-Bringer",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Pain-Bringer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 146,
+    "name": "Myth-Giver",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth-Giver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 147,
+    "name": "Fire-Giver",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire-Giver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 148,
+    "name": "Life-Giver",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life-Giver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 151,
+    "name": "Fire Striker",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire_Striker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 152,
+    "name": "Life Striker",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life_Striker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 153,
+    "name": "Mana Gift",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Mana_Gift",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 155,
+    "name": "Fire Assailant",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire_Assailant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 156,
+    "name": "Life Assailant",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life_Assailant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 160,
+    "name": "Taunt",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Taunt",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 163,
+    "name": "Element Shield",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Element_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 166,
+    "name": "Ice-Giver",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice-Giver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 167,
+    "name": "Pain-Giver",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Pain-Giver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 169,
+    "name": "Vehement Vanquisher",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Vehement_Vanquisher",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 170,
+    "name": "Pip Saver",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Pip_Saver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 171,
+    "name": "Curse Giver",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Curse_Giver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 172,
+    "name": "Plaguebringer",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Plaguebringer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 173,
+    "name": "Steal Health",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Steal_Health",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 175,
+    "name": "Big Sparky",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Big_Sparky",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 176,
+    "name": "Storm-Tooth",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm-Tooth",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 177,
+    "name": "Balance-Boon",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance-Boon",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 178,
+    "name": "Balance-Dealer",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance-Dealer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 179,
+    "name": "Balance-Giver",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance-Giver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 182,
+    "name": "Ally Glacial Shield",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ally_Glacial_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 183,
+    "name": "Ice-Dealer",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice-Dealer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 185,
+    "name": "Storm Front",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm_Front",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 187,
+    "name": "Stormspear",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Stormspear",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 188,
+    "name": "Ice-Proof",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice-Proof",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 189,
+    "name": "Spell-Proof",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Spell-Proof",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 191,
+    "name": "Clean Charm",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Clean_Charm",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 192,
+    "name": "Myth-Proof",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth-Proof",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 195,
+    "name": "Fire-Proof",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire-Proof",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 196,
+    "name": "Life-Proof",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life-Proof",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 197,
+    "name": "Ally Volcanic Shield",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ally_Volcanic_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 198,
+    "name": "Evil Eye",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Evil_Eye",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 199,
+    "name": "Unbalancer",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Unbalancer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 200,
+    "name": "Balance-Ward",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance-Ward",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 201,
+    "name": "Balance-Off",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance-Off",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 202,
+    "name": "Mega Soothe",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Mega_Soothe",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 204,
+    "name": "Pyrosaurus Rex",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Pyrosaurus_Rex",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 205,
+    "name": "Unbalance",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Unbalance",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 206,
+    "name": "Steal Ward",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Steal_Ward",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 207,
+    "name": "Power Up",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Power_Up",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 211,
+    "name": "Iceblade",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Iceblade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 212,
+    "name": "Punishment",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Punishment",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 213,
+    "name": "Ice-Ward",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice-Ward",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 215,
+    "name": "Lifespear",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Lifespear",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 216,
+    "name": "Firespear",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Firespear",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 217,
+    "name": "Windstorm",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Windstorm",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 218,
+    "name": "Ice-Shot",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice-Shot",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 219,
+    "name": "Ice-Sniper",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice-Sniper",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 220,
+    "name": "Ice-Eye",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice-Eye",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 221,
+    "name": "Steal Charm",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Steal_Charm",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 222,
+    "name": "Virulence",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Virulence",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 224,
+    "name": "Mythspear",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Mythspear",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 229,
+    "name": "Button Tom",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Button_Tom",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 230,
+    "name": "Element Blade",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Element_Blade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 235,
+    "name": "Mana Boost",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Mana_Boost",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 238,
+    "name": "Boss Toad",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Boss_Toad",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 239,
+    "name": "Spritely",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Spritely",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 245,
+    "name": "Wise",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Wise",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 246,
+    "name": "Crafty",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Crafty",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 247,
+    "name": "Weakness",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Weakness",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 248,
+    "name": "Strangle",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Strangle",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 249,
+    "name": "Entangle",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Entangle",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 252,
+    "name": "Ice-Away",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice-Away",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 253,
+    "name": "Spell-Defying",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Spell-Defying",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 254,
+    "name": "Balancespear",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balancespear",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 256,
+    "name": "Light Strike",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Light_Strike",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 261,
+    "name": "Steadfast",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Steadfast",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 262,
+    "name": "Sharp",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Sharp",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 263,
+    "name": "Eager",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Eager",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 264,
+    "name": "Rugged",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Rugged",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 265,
+    "name": "Reliquary",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Reliquary",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 268,
+    "name": "Ace Avenger",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ace_Avenger",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 271,
+    "name": "Blazing Oak",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Blazing_Oak",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 274,
+    "name": "Ice Trap",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice_Trap",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 276,
+    "name": "Thinkin' Cap",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Thinkin'_Cap",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 277,
+    "name": "Canny",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Canny",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 278,
+    "name": "Gardening Pixie",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Gardening_Pixie",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 280,
+    "name": "Durable",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Durable",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 281,
+    "name": "Astute",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Astute",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 282,
+    "name": "Spirited",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Spirited",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 283,
+    "name": "Tenacious",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Tenacious",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 284,
+    "name": "Fairy Friend",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fairy_Friend",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 285,
+    "name": "Sprite Queen",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Sprite_Queen",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 286,
+    "name": "Galvanic Field",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Galvanic_Field",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 288,
+    "name": "Clock Spider",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Clock_Spider",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 289,
+    "name": "Life-Shot",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life-Shot",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 290,
+    "name": "Life-Sniper",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life-Sniper",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 291,
+    "name": "Life-Eye",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life-Eye",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 292,
+    "name": "Storm-Proof",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm-Proof",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 293,
+    "name": "Storm-Ward",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm-Ward",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 294,
+    "name": "Storm-Away",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm-Away",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 295,
+    "name": "Incredibly Infallible",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Incredibly_Infallible",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 299,
+    "name": "Critical Striker",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Critical_Striker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 300,
+    "name": "Ice Assailant",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice_Assailant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 301,
+    "name": "Critical Hitter",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Critical_Hitter",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 302,
+    "name": "Ice Striker",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ice_Striker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 303,
+    "name": "Icespear",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Icespear",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 305,
+    "name": "Add Health",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Add_Health",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 306,
+    "name": "Health Gift",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Health_Gift",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 307,
+    "name": "Health Boost",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Health_Boost",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 308,
+    "name": "Health Bounty",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Health_Bounty",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 312,
+    "name": "Steal Blade",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Steal_Blade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 317,
+    "name": "Spirit Armor",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Spirit_Armor",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 318,
+    "name": "Get Sunbird",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Get_Sunbird",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 319,
+    "name": "Snow Shield",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Snow_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 323,
+    "name": "Myth Shield",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 324,
+    "name": "Brown Recluse",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Brown_Recluse",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 328,
+    "name": "Death-Boon",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death-Boon",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 329,
+    "name": "Death-Dealer",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death-Dealer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 330,
+    "name": "Death-Giver",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death-Giver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 332,
+    "name": "Fire Shield",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 333,
+    "name": "Life Shield",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 335,
+    "name": "Dogged",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Dogged",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 336,
+    "name": "Calculating",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Calculating",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 337,
+    "name": "Cheeky",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Cheeky",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 338,
+    "name": "Hearty",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Hearty",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 340,
+    "name": "Green Thumb",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Green_Thumb",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 341,
+    "name": "Life-Away",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life-Away",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 342,
+    "name": "Life-Ward",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life-Ward",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 343,
+    "name": "Pyromania",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Pyromania",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 345,
+    "name": "Fire-Away",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire-Away",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 346,
+    "name": "Fire-Ward",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire-Ward",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 347,
+    "name": "Storm Trap",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm_Trap",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 348,
+    "name": "Pip Conserver",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Pip_Conserver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 350,
+    "name": "Might of Myth",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Might_Of_Myth",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 351,
+    "name": "Vaporize",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Vaporize",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 353,
+    "name": "Drop It",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Drop_It",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 354,
+    "name": "Myth-Away",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth-Away",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 355,
+    "name": "Myth-Ward",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth-Ward",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 356,
+    "name": "Screen",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Screen",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 357,
+    "name": "Storm Assistant",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm_Assistant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 358,
+    "name": "Magnificent Mender",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Magnificent_Mender",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 359,
+    "name": "Mender",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Mender",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 360,
+    "name": "Stormblade",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Stormblade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 363,
+    "name": "Energizing Battery",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Energizing_Battery",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 365,
+    "name": "Sword and Shield!",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Sword_And_Shield!",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 366,
+    "name": "Death-Proof",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death-Proof",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 367,
+    "name": "Death-Ward",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death-Ward",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 368,
+    "name": "Death-Away",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death-Away",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 369,
+    "name": "Expert Empowerer",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Expert_Empowerer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 371,
+    "name": "Subdue",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Subdue",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 374,
+    "name": "Heart o'Pixie",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Heart_O'Pixie",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 375,
+    "name": "Power-Taker",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Power-Taker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 376,
+    "name": "Plague",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Plague",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 377,
+    "name": "Blade Flurry",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Blade_Flurry",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 378,
+    "name": "Disarmament",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Disarmament",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 379,
+    "name": "Vengeful Seraph",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Vengeful_Seraph",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 381,
+    "name": "Animate Skeleton",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Animate_Skeleton",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 382,
+    "name": "Infector",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Infector",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 383,
+    "name": "Feinting Spell",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Feinting_Spell",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 390,
+    "name": "Myth Trap",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth_Trap",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 394,
+    "name": "Myth Assailant",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth_Assailant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 395,
+    "name": "Life Trap",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life_Trap",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 396,
+    "name": "Go Humongo",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Go_Humongo",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 397,
+    "name": "Fire Trap",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire_Trap",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 398,
+    "name": "Blade of Life",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Blade_Of_Life",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 399,
+    "name": "Blade of Fire",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Blade_Of_Fire",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 400,
+    "name": "Aura Crush",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Aura_Crush",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 402,
+    "name": "Myth Striker",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth_Striker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 403,
+    "name": "Life-Bringer",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life-Bringer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 404,
+    "name": "Life-Boon",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life-Boon",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 409,
+    "name": "Fire-Dealer",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire-Dealer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 410,
+    "name": "Fire-Boon",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire-Boon",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 411,
+    "name": "Myth-Dealer",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth-Dealer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 412,
+    "name": "Myth-Boon",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth-Boon",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 413,
+    "name": "Ward Wrecker",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ward_Wrecker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 416,
+    "name": "Sleet Storm",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Sleet_Storm",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 417,
+    "name": "Unicorn",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Unicorn",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 418,
+    "name": "Relentless",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Relentless",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 419,
+    "name": "Brilliant",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Brilliant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 420,
+    "name": "Powerful",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Powerful",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 421,
+    "name": "Mighty",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Mighty",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 422,
+    "name": "Death Trap",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death_Trap",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 425,
+    "name": "The Deer Knight Rises",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:The_Deer_Knight_Rises",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 431,
+    "name": "Mana Bounty",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Mana_Bounty",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 432,
+    "name": "Deathblade",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Deathblade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 433,
+    "name": "Crystallize",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Crystallize",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 435,
+    "name": "Pet Rescue",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Pet_Rescue",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 437,
+    "name": "Fire Assistant",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fire_Assistant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 438,
+    "name": "Bulwark",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Bulwark",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 441,
+    "name": "Smoke Screen",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Smoke_Screen",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 444,
+    "name": "Dissipate",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Dissipate",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 446,
+    "name": "Fearless Fortifier",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fearless_Fortifier",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 448,
+    "name": "Mend Minion",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Mend_Minion",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 449,
+    "name": "Sprite Time",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Sprite_Time",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 450,
+    "name": "Elf on Fire",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Elf_On_Fire",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 451,
+    "name": "Big Energy",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Big_Energy",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 452,
+    "name": "Huge Energy",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Huge_Energy",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 453,
+    "name": "Energy",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Energy",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 454,
+    "name": "Ultra Energy",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ultra_Energy",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 461,
+    "name": "Storm-Boon",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm-Boon",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 462,
+    "name": "Storm-Dealer",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm-Dealer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 463,
+    "name": "Storm-Giver",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm-Giver",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 466,
+    "name": "Amplifier",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Amplifier",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 468,
+    "name": "Ardent Amplifier",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ardent_Amplifier",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 469,
+    "name": "Courageous",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Courageous",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 470,
+    "name": "Intrepid",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Intrepid",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 471,
+    "name": "Refreshed",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Refreshed",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 472,
+    "name": "Resourceful",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Resourceful",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 473,
+    "name": "Quick-Witted",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Quick-Witted",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 474,
+    "name": "Gifted",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Gifted",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 475,
+    "name": "Vigorous",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Vigorous",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 476,
+    "name": "Dashing",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Dashing",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 477,
+    "name": "Effervescent",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Effervescent",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 478,
+    "name": "Lively",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Lively",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 482,
+    "name": "Power Player",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Power_Player",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 483,
+    "name": "Feeling Weak",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Feeling_Weak",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 484,
+    "name": "Hexster",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Hexster",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 485,
+    "name": "Sap Health",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Sap_Health",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 487,
+    "name": "Death Shield",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 490,
+    "name": "Life Fuel",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Life_Fuel",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 491,
+    "name": "Reinforce",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Reinforce",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 495,
+    "name": "Myth Fuel",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth_Fuel",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 498,
+    "name": "Chastisement",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Chastisement",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 501,
+    "name": "No Pain, No Gain",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:No_Pain,_No_Gain",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 502,
+    "name": "Black Widow",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Black_Widow",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 504,
+    "name": "Death Assailant",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Death_Assailant",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 506,
+    "name": "Healer",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Healer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 507,
+    "name": "Medic",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Medic",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 508,
+    "name": "Bullheaded",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Bullheaded",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 513,
+    "name": "Guiding Light",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Guiding_Light",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 514,
+    "name": "Berserker",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Berserker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 515,
+    "name": "Brazen Berserker",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Brazen_Berserker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 516,
+    "name": "Tireless",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Tireless",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 517,
+    "name": "Determined",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Determined",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 518,
+    "name": "Unshakeable",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Unshakeable",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 520,
+    "name": "Ally Thermic Shield",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ally_Thermic_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 521,
+    "name": "Curse",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Curse",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 522,
+    "name": "Frenzied",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Frenzied",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 524,
+    "name": "Spirit Shield",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Spirit_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 526,
+    "name": "Freeze",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Freeze",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 527,
+    "name": "Ally Stun Block",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ally_Stun_Block",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 529,
+    "name": "Black Mantle",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Black_Mantle",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 531,
+    "name": "Charm Chopper",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Charm_Chopper",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 539,
+    "name": "Biting Cold",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Biting_Cold",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 541,
+    "name": "Grand Phoenix",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Grand_Phoenix",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 542,
+    "name": "Myth-Eye",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth-Eye",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 543,
+    "name": "Myth-Sniper",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth-Sniper",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 544,
+    "name": "Myth-Shot",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Myth-Shot",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 545,
+    "name": "Ally Ether Shield",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ally_Ether_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 546,
+    "name": "Ally Spirit Shield",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Ally_Spirit_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 548,
+    "name": "Lifeblade",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Lifeblade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 549,
+    "name": "Fireblade",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fireblade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 551,
+    "name": "Hex",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Hex",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 553,
+    "name": "Careful",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Careful",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 554,
+    "name": "Forceful",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Forceful",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 555,
+    "name": "Capable",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Capable",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 557,
+    "name": "Mythblade",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Mythblade",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 565,
+    "name": "Storm Shield",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm_Shield",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 566,
+    "name": "Armor Breaker",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Armor_Breaker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 567,
+    "name": "Armor Piercer",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Armor_Piercer",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 568,
+    "name": "Storm Striker",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Storm_Striker",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 569,
+    "name": "Defender's Rampart",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Defender's_Rampart",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 570,
+    "name": "Cure Crusher",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Cure_Crusher",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 573,
+    "name": "Quench",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Quench",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 574,
+    "name": "Melt",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Melt",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 579,
+    "name": "Stun",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Stun",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 580,
+    "name": "Calm",
+    "rank": "Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Calm",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 581,
+    "name": "Fuel",
+    "rank": "Epic",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Fuel",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 582,
+    "name": "Clean Ward",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Clean_Ward",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 583,
+    "name": "Balance-Eye",
+    "rank": "Common",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance-Eye",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 584,
+    "name": "Balance-It",
+    "rank": "Uncommon",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance-It",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  },
+  {
+    "order": 587,
+    "name": "Balance-Sniper",
+    "rank": "Ultra-Rare",
+    "url": "http://www.wizard101central.com/wiki/PetAbility:Balance-Sniper",
+    "score": 0,
+    "emoji": "",
+    "flags": [],
+    "school": ""
+  }
+]
