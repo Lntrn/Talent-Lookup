@@ -1,5 +1,6 @@
+const csv=require('csvtojson')
+
 const fs = require("fs");
-require('dotenv-flow');
 
 const Channels = require("../utilities/channels.js");
 const Config = JSON.parse(fs.readFileSync('./utilities/config.json', 'utf8'));
@@ -8,46 +9,59 @@ const Format = require("../utilities/format.js");
 const Discord = require("discord.js");
 const Emojis = require("../utilities/emojis.js");
 
-const { GoogleSpreadsheet } = require('google-spreadsheet');
-
 module.exports = {
-			name: "oldTalentSearch",
-			aliases: ["oldts"],
-			description: "Checks for multiple talents in the database.",
-			usage: "<talent one>, <talent two>, etc...",
-			id: "7992",
-		async execute(client, message, args) {
+			name: "devtalentSearch",
+			aliases: ["devts"],
+			description: "",
+			id: "",
+	    async execute(client, message, args) {
 
-			// Spreadsheet ID || In between the /d/ and /edit in the spreadsheet's URL
-			// https://docs.google.com/spreadsheets/d/1pXHrhP__pWBkV4DBazMVlad4cv51hjJPq-es4EzQgw0/edit#gid=0
-			const doc = new GoogleSpreadsheet("1pXHrhP__pWBkV4DBazMVlad4cv51hjJPq-es4EzQgw0");
+			if (message.author.id !== Config.ownerID) {
+				return message.channel.send("no access");
+			}
 
-			// Login to Google's server
-    		await doc.useServiceAccountAuth({
-				client_email: process.env.CLIENT_EMAIL,
-				private_key: process.env.PRIVATE_KEY.replace(/\\n/gm, '\n'),
-			});
+            class fullTalentList{
+                set Priority(Priority){
+                    this._Priority = Priority;
+                }
+                set Name(Name){
+                    this._Name = Name;
+                }
+                get Priority(){
+                    return this._Priority;
+                }
+                get Name(){
+                    return this._Name;
+                }
+                constructor(){
+                }
+            }
 
-			// Load the spread sheet
-			await doc.loadInfo();
+            let fullTalentArray = [];// Array to store Employee Objects
 
-			message.channel.send("connecting to database, please wait");
+            // Invoking csv returns a promise
+            const converter = csv()
+            .fromFile("./priorities/talents.csv")
+            .then((converted) => {
+                let t;// Will be an Employee Object
+                converted.forEach((row) => {
+                    t = new fullTalentList();// New Employee Object
+                    Object.assign(t, row);// Assign json to the new Employee
+                    fullTalentArray.push(t);// Add the Employee to the Array
+                })});
 
-			// Go to next function || Line 47
-			prepareArgs(client, message, args, doc);
-			
-			// Log the command
-			CommandLog.logCommand(client, message, message.guild.id, "old talent Search");
-		}
+			prepareArgs(client, message, args, fullTalentArray);
+
+			// Log command
+			CommandLog.logCommand(client, message, message.guild.id, "talent search");
+      	}
 };
 
-//Function to automaically capitalise first letters of words
 function capitalize(str) {
-	return str.charAt(0).toUpperCase() + str.slice(1);
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// Preparing the arguments for use
-async function prepareArgs(client, message, args, doc) {
+async function prepareArgs(client, message, args, fullTalentArray) {
 
 	// Joining the arguments in to one long string
 	let argsStr = args.join(" ");
@@ -107,53 +121,9 @@ async function prepareArgs(client, message, args, doc) {
 		}
 	}
 
-	findTalents(client, message, args, doc, talentArray, totalCount);
-}
-
-async function findTalents(client, message, args, doc, talentArray, totalCount) {
-	// Picks the first sheet in the spreadsheet file
-	let sheet = doc.sheetsByIndex[0];
-	// Used in adding each talent to an array || Line 123
-	let a = 0;
-	// Load the cells required for this function
-	await sheet.loadCells('B1:B');
-
-	// Create things for future use
-	let listArray = [];
-	let tal;
-	let value;
-
-	// Loop to search the spreadsheet for matching talent names
-	for (let v = 0; v < sheet.cellStats.nonEmpty; v++) {
-		
-		// Finds each talent, "v" increasing means down one row in the spreadsheet
-		tal = await sheet.getCell(v, 1);
-		//console.log(tal.value)
-
-		value = tal.value.toLowerCase();
-
-		// If a cell's value matches, save it's value and row number
-		if (talentArray.some(t => value.includes(t))) {
-
-
-			let forURL = value.split(" ").map(capitalize).join("_");
-
-			if (value.includes("-")) {
-				forURL = value.split("-").map(capitalize).join("-");
-			}
-
-			let data = {
-				"name": value,
-				"row": v,
-				"url": `http://www.wizard101central.com/wiki/PetAbility:${forURL}`
-			}
-			// Add "data" to the array
-			listArray[a] = data;
-			a++;
-		}
-	}
-	  
+	findTalents(client, message, args, fullTalentArray, talentArray, totalCount);
 	getWeights(client, message, doc, sheet, listArray, totalCount);
+	getRanks(client, message, doc, sheet, weights, totalCount);
 }
 
 async function getWeights(client, message, doc, sheet, listArray, totalCount) {
@@ -318,44 +288,3 @@ async function sendData(client, message, doc, sheet, dataArray, totalCount) {
 			
 }
 
-async function spacer(message, client, args) {
-
-	let alphabetMap = new Map()
-		alphabetMap["a"] = "10"
-		alphabetMap["b"] = "10"
-		alphabetMap["c"] = "10"
-		alphabetMap["d"] = "10"
-		alphabetMap["e"] = "10"
-		alphabetMap["f"] = ""
-		alphabetMap["g"] = "10"
-		alphabetMap["h"] = "10"
-		alphabetMap["i"] = ""
-		alphabetMap["j"] = "1"
-		alphabetMap["k"] = "1"
-		alphabetMap["l"] = "1"
-		alphabetMap["m"] = "1"
-		alphabetMap["n"] = "1"
-		alphabetMap["o"] = "1"
-		alphabetMap["p"] = "1"
-		alphabetMap["q"] = "1"
-		alphabetMap["r"] = "1"
-		alphabetMap["s"] = "1"
-		alphabetMap["t"] = "1"
-		alphabetMap["u"] = "1"
-		alphabetMap["v"] = "1"
-		alphabetMap["w"] = "1"
-		alphabetMap["x"] = ""
-		alphabetMap["y"] = ""
-		alphabetMap["z"] = ""
-		
-	let argsStr = args.join("");
-	let letters = talents.split("");
-	
-	for (letter of letters) {
-
-		if (letter.length !== 0) {
-
-		}
-	}
-    
-}

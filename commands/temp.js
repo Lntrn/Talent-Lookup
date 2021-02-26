@@ -21,6 +21,10 @@ module.exports = {
 			id: "",
 		async execute(client, message, args) {
 
+            if (message.author.id !== Config.ownerID) {
+    		return message.channel.send("no access");
+            }
+
             class fullTalentList{
                 set Order(Order){
                     this.order = Order;
