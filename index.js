@@ -69,8 +69,8 @@ client.on("ready", async () => {
   } else {
     client.user.setPresence({
       activity: {
-        name: "Wizard101",
-        type: "PLAYING"
+        name: "my pets fail",
+        type: "WATCHING"
       },
       status: "dnd"
     });
@@ -125,9 +125,23 @@ client.on("message", async (message) => {
 		  .setThumbnail(message.author.avatarURL())
 		  .setColor("#310ff5")
       .setDescription(`User ID: \`${message.author.id}\`\nUser Mention: <@${message.author.id}>\nMessage content: \n>>> ${message.content}`)
-      
-    message.channel.send("Your message has been forwarded.")
-    return client.channels.cache.get(Channels.chat.id).send(dmEmbed);
+      .setImage(message.attachments[0])
+
+    let toSend = "Your message has been forwarded."
+    message.channel.send(toSend)
+    if (message.attachments.length !== 1) {
+      attachments = message.attachments;
+    } else {
+      dmEmbed.setImage(message.attachments[0]);
+    }
+    client.channels.cache.get(Channels.chat.id).send(dmEmbed);
+    if (attachments) {
+      return client.channels.cache.get(Channels.chat.id).send("Message attachments", attachments);
+    } else {
+      return console.log("no attackments");
+    }
+
+    
   }
 
   let args;
